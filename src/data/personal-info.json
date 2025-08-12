@@ -1,0 +1,351 @@
+{
+  "personal": {
+    "name": "Pratham Patil",
+    "nickname": "Pratham",
+    "title": "AI & ML Engineer",
+    "company": "Lowe's Companies, Inc.",
+    "location": "Pune, India",
+    "email": "prathamlpatil04@gmail.com",
+    "phone": "+91-9356854392",
+    "tagline": "Generative AI & ML Engineer",
+    "bio": "I engineer intelligent solutions at the intersection of AI and modern application development. From creating platforms for intelligent agents to visualizing complex datasets, I transform raw data into impactful digital experiences.",
+    "closingBio": "Ready to collaborate on something extraordinary? I'm always excited to connect with fellow innovators, explore cutting-edge projects, and push the boundaries of what's possible with technology. Let's build the future together.",
+    "story": [
+      "My journey into the world of technology is rooted in a deep fascination with Artificial Intelligence. As a final-year engineering student specializing in AI & Machine Learning, I've moved beyond theory to actively build and deploy intelligent systems. Through hands-on projects and a dynamic internship experience, I've had the privilege of translating complex concepts into real-world applications, from full-stack development to data visualization.", 
+      "My driving principle is to use AI not just as a tool, but as a partner in problem-solving. Whether it's architecting platforms that empower other developers or building analytics dashboards to demystify complex data, my goal is always the same: to create solutions that are intuitive, intelligent, and impactful. I'm driven by the belief that the best technology enhances human capability and brings clarity to chaos.", 
+      "Fueled by a passion for technology, I constantly find myself tinkering with new AI projects. As a firm believer in continuous learning, I'm excited to connect with others in Pune's vibrant tech scene to build what's next."],
+    "profileImage": "https://i.postimg.cc/vZRG9CVR/pratham-profile.png"
+  },
+  "stats": {
+    "projects": "10+",
+    "yearsExperience": "2+",
+    "technologiesMastered": "30+"
+  },
+  "social": {
+    "linkedin": {
+      "url": "https://www.linkedin.com/in/prathamlpatil",
+      "username": "prathamlpatil"
+    },
+    "github": {
+      "url": "https://github.com/PrathamPatil17",
+      "username": "PrathamPatil17"
+    },
+    "medium": {
+      "url": "https://medium.com/@prathamlpatil04",
+      "username": "prathamlpatil04"
+    },
+    "email": "prathamlpatil04@gmail.com",
+    "phone": "tel:+919356854392",
+    "resume": "https://drive.google.com/file/d/1YlAp1w9RoGmIC4iwQhms1r6eFVWl_jNC/view"
+  },
+  "skills": {
+    "languages": [
+      { "name": "Python", "experience": "5+ years", "context": "AI/ML, automation, APIs", "category": "Programming Languages", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+      { "name": "JavaScript", "experience": "3+ years", "context": "Full-stack, React, Node.js", "category": "Programming Languages", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+      { "name": "TypeScript", "experience": "2+ years", "context": "Enterprise React/Next.js", "category": "Programming Languages", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
+      { "name": "Java", "experience": "1+ year", "context": "Spring Boot, enterprise", "category": "Programming Languages", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
+      { "name": "C", "experience": "Academic", "context": "Systems, algorithms", "category": "Programming Languages", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" },
+      { "name": "SQL", "experience": "2+ years", "context": "Database design, queries", "category": "Programming Languages", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" }
+    ],
+    "ai_ml": [
+      { "name": "HuggingFace", "experience": "1+ year", "context": "Multimodal AI, fine-tuning", "category": "AI/ML", "icon": "https://huggingface.co/front/assets/huggingface_logo-noborder.svg" },
+      { "name": "Langchain", "experience": "2+ year", "context": "RAG systems, AI agents", "category": "AI/ML", "icon": "https://python.langchain.com/img/brand/wordmark.png" },
+      { "name": "OpenAI SDK", "experience": "1+ year", "context": "GPT integration, automation", "category": "AI/ML", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/openai/openai-original.svg" },
+      { "name": "Google ADK", "experience": "Current", "context": "Enterprise AI solutions", "category": "AI/ML", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" },
+      { "name": "Agents SDK", "experience": "Current", "context": "AI agent development", "category": "AI/ML", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+      { "name": "Arize AI", "experience": "Current", "context": "ML monitoring, tracking", "category": "AI/ML", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" }
+    ],
+    "backend": [
+      { "name": "FastAPI", "experience": "2+ year", "context": "High-performance APIs", "category": "Backend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" },
+      { "name": "Node.js", "experience": "3+ years", "context": "RESTful APIs, microservices", "category": "Backend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
+      { "name": "Django", "experience": "1+ year", "context": "Web apps, admin panels", "category": "Backend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" },
+      { "name": "Flask", "experience": "1+ year", "context": "Lightweight APIs", "category": "Backend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" },
+      { "name": "Spring Boot", "experience": "1+ year", "context": "Enterprise Java apps", "category": "Backend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" }
+    ],
+    "frontend": [
+      { "name": "React.js", "experience": "3+ years", "context": "MicroFrontends, SPAs", "category": "Frontend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+      { "name": "Next.js", "experience": "1+ year", "context": "SSG/SSR applications", "category": "Frontend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" },
+      { "name": "ThreeJS", "experience": "Project-based", "context": "3D visualizations", "category": "Frontend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/threejs/threejs-original.svg" },
+      { "name": "HTML/CSS", "experience": "4+ years", "context": "Responsive design", "category": "Frontend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" }
+    ],
+    "cloud_databases": [
+      { "name": "Microsoft Azure", "experience": "Project-based", "context": "Cloud deployment, Logic Apps", "category": "Cloud & Databases", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" },
+      { "name": "Kubernetes", "experience": "Project-based", "context": "Pod deployment, clusters", "category": "Cloud & Databases", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" },
+      { "name": "Docker", "experience": "2+ years", "context": "Containerization", "category": "Cloud & Databases", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
+      { "name": "MongoDB", "experience": "2+ year", "context": "NoSQL databases", "category": "Cloud & Databases", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
+      { "name": "Redis", "experience": "1+ year", "context": "Caching, sessions", "category": "Cloud & Databases", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" },
+      { "name": "Linux Systems", "experience": "1+ years", "context": "Terminal commands, system administration", "category": "Cloud & Databases", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" }
+    ]
+  },
+  "experience": [
+    {
+      "id": 1,
+      "title": "Web Development Intern",
+      "company": "Aroma Brand Solutions",
+      "location": "Pune, India",
+      "logo": "/aroma-brand.png",
+      "duration": "Jan 2025 – Feb 2025",
+      "description": "A dynamic role focused on front-end development and agile project delivery. Engineered and styled critical, user-facing sections for a live client project, translating high-fidelity Figma designs into pixel-perfect, responsive components. Integrated seamlessly within a dynamic Agile framework, participating in daily stand-ups and rigorous code reviews to ensure rapid development and high-quality deliverables.",
+      "achievements": [
+        "Developed and delivered key front-end modules for a live client website, including the navigation, hero, and user settings sections.",
+        "Translated high-fidelity Figma mockups into fully responsive, production-ready code using React.js and Tailwind CSS.",
+        "Actively contributed to a high-velocity Agile team, improving code quality through peer code reviews and collaborative problem-solving.",
+        "Mastered modern development workflows, utilizing Git and GitHub for version control, branching, and team collaboration."
+      ],
+      "technologies": ["React.js", "Tailwind CSS", "JavaScript", "Figma", "Git", "GitHub", "Agile Methodology"]
+    }
+  ],
+  "education": {
+    "degree": "BE in Artificial Intelligence and Machine Learning",
+    "institution": "P.E.S Modern College of Engineering, Pune",
+    "duration": "Nov 2022 – Jun 2026",
+    "cgpa": "8.00/10.0",
+    "location": "Pune, India"
+  },
+  "projects": [
+    {
+      "id": 1,
+      "title": "RetrieveX",
+      "subtitle": "Intelligent Retrieval System (RAG)",
+      "description": "An intelligent retrieval system enabling users to ask complex questions in natural language and receive accurate, source-cited answers from a private financial knowledge base.",
+      "longDescription": "A finalist project for the HackRx 6.0 hackathon by Bajaj Finserv. This RAG platform was built to query vast financial documents using natural language, leveraging Langchain and Vector Databases to deliver instant, verifiable answers. The system is served via a FastAPI backend and deployed on GCP.",
+      "technologies": ["Python", "FastAPI", "GCP", "Docker", "Langchain", "LLMs", "Vector DB"],
+      "github": "https://github.com/PrathamPatil17/heroku",
+      "featured": true,
+      "categories": ["AI/ML", "Natural Language Processing", "FinTech"],
+      "image": "https://i.postimg.cc/mZFqMkND/RetieveX.png",
+      "status": "Hackathon Finalist",
+      "priority": 1
+    },
+    {
+      "id": 2,
+      "title": "HR Analytics Dashboard",
+      "subtitle": "Business Intelligence Dashboard",
+      "description": "An interactive Tableau dashboard designed to transform raw HR data into actionable insights on employee attrition, performance, and workforce trends.",
+      "longDescription": "A data visualization project focused on business intelligence. This dashboard analyzes a complex HR dataset to identify key trends and pain points, providing a clear, interactive tool for strategic decision-making.",
+      "technologies": ["Tableau", "Data Analysis", "Data Cleaning", "Business Intelligence"],
+      "github": "https://public.tableau.com/app/profile/pratham.patil5242/viz/HRDashboard_17347780267140/HRSummary",
+      "featured": true,
+      "categories": ["Data Visualization", "Business Intelligence", "Data Analysis"],
+      "image": "https://i.postimg.cc/1zZb5QNt/HR-dashboard.png",
+      "status": "Data Visualization",
+      "priority": 2
+    },
+    {
+      "id": 3,
+      "title": "Walmart Sales Analysis",
+      "subtitle": "SQL Data Exploration Project",
+      "description": "A comprehensive SQL-based analysis of the Walmart sales dataset to uncover insights on product performance, customer behavior, and branch-level profitability.",
+      "longDescription": "This project involved an in-depth exploration of a real-world sales dataset using advanced SQL queries. I focused on feature engineering to create new time-based columns, followed by rigorous analysis to answer key business questions related to top-performing products, sales trends over time, and customer purchasing habits across different branches.",
+      "technologies": ["SQL", "MySQL", "Data Analysis", "Feature Engineering", "Business Intelligence"],
+      "github": "https://github.com/PrathamPatil17/Walmart-SQL-Project",
+      "featured": false,
+      "categories": ["Data Analysis", "SQL", "Business Intelligence"],
+      "image": "https://i.postimg.cc/jjZv00HB/Walmart.png",
+      "status": "Data Analysis",
+      "priority": 5
+    },
+    {
+      "id": 4,
+      "title": "CodeNarrator",
+      "subtitle": "AI-Powered Codebase Explainer",
+      "description": "An ambitious project concept to create an autonomous AI agent that analyzes GitHub repositories and automatically generates narrated, YouTube-style video tutorials.",
+      "longDescription": "Slated as my final-year engineering project, CodeNarrator will tackle the difficult problem of developer onboarding. The plan is to use a sophisticated multi-agent system with LangGraph to parse code, generate coherent scripts, create visuals like flowcharts, and render a final video with a text-to-speech voiceover. The goal is to turn complex codebases into easy-to-understand narrated stories.",
+      "technologies": ["Python", "LangChain", "LangGraph", "Hugging Face", "FastAPI", "Docker", "FFmpeg", "GCP"],
+      "github": "",
+      "featured": true,
+      "categories": ["AI/ML", "Developer Tools", "Generative AI", "Automation"],
+      "image": "https://i.postimg.cc/FsHrNjXq/Codenarrator.png",
+      "status": "Upcoming Final Year Project",
+      "priority": 4
+    },
+    {
+      "id": 5,
+      "title": "Promonade",
+      "subtitle": "Promotions Management UI",
+      "description": "Full-stack application for Promonade promotions management system built with modern React and Spring boot technologies and beautiful UI components.",
+      "longDescription": "Modern React frontend for promotions management featuring responsive design with Tailwind CSS, interactive charts with Recharts, and comprehensive UI components using Shadcn. Integrates with backend promotions management system.",
+      "technologies": ["React.js", "Spring Boot", "Java", "PostgreSQL", "Tailwind CSS", "Shadcn", "Lucide Icons", "Recharts"],
+      "github": "https://github.com/Shades-en/promonade-ui",
+      "featured": false,
+      "categories": ["Fullstack Development", "Enterprise"],
+      "image": "https://i.postimg.cc/3JByPFNL/image.png",
+      "status": "Completed",
+      "priority": 8
+    },
+    {
+      "id": 6,
+      "title": "Car Theft Detection System",
+      "subtitle": "Automated Parking Security",
+      "description": "Automated vehicle theft detection system for parking facilities using computer vision and barcode scanning technology.",
+      "longDescription": "Python-based security system that detects vehicle theft in real-time using moving object detection, Frame differencing techniques and barcode scanning for parking entry validation. Notifies security personnel about unauthorized vehicle movements with automated monitoring.",
+      "technologies": ["Python", "OpenCV", "Computer Vision", "Digital Image Processing"],
+      "github": "https://github.com/Shades-en/Car-theft-detection-Parking",
+      "featured": false,
+      "categories": ["AI/ML", "Security", "Computer Vision"],
+      "image": "https://i.postimg.cc/SKKtWd2H/image.png",
+      "status": "Active Development",
+      "priority": 3
+    },
+    {
+      "id": 7,
+      "title": "Bubble Bop",
+      "subtitle": "QR-Based Restaurant Management",
+      "description": "Hotel management system that takes orders for each table based on scanning QR codes available at tables, streamlining the dining experience.",
+      "longDescription": "Django-based restaurant management system featuring QR code table ordering, MongoDB integration, email notifications, and comprehensive order management. Includes both customer-facing ordering interface and restaurant management dashboard.",
+      "technologies": ["Python", "Django", "MongoDB", "HTML", "CSS", "JavaScript"],
+      "github": "https://github.com/Shades-en/Bubble-Bop-Food-Dine-In",
+      "featured": false,
+      "categories": ["Fullstack Development", "Restaurant Tech"],
+      "image": "https://i.postimg.cc/fWPqYYDr/image.png",
+      "status": "Completed",
+      "priority": 9
+    },
+    {
+      "id": 8,
+      "title": "Myxable",
+      "subtitle": "File Conversion Platform",
+      "description": "Open-source multiformat bulk file conversion platform that won 2nd place at Reva Hack 2021 hackathon.",
+      "longDescription": "Django-based file conversion platform supporting multiple file formats with bulk processing capabilities. Features user-friendly interface for seamless file format conversions, developed as part of hackathon competition.",
+      "technologies": ["Python", "Django", "File Processing", "Web Development"],
+      "github": "https://github.com/Shades-en/myxable",
+      "featured": false,
+      "categories": ["Fullstack Development", "Utility"],
+      "image": "https://i.postimg.cc/j2hVS5Jb/image.png",
+      "status": "Completed",
+      "priority": 7
+    },
+    {
+      "id": 9,
+      "title": "ContentForge",
+      "subtitle": "AI Content Creation Ecosystem",
+      "description": "An autonomous multi-agent system where specialized AI agents collaborate to research, write, edit, and optimize high-quality written content from a single prompt.",
+      "longDescription": "This project is a concept for an advanced content automation pipeline. It uses LangGraph to orchestrate a team of specialized agents—including a Researcher, Writer, Editor, and SEO Optimizer—that work sequentially to produce polished, fact-checked, and search-engine-optimized articles. The goal is to build a 'digital content team' powered by LLMs.",
+      "technologies": ["Python", "LangChain", "LangGraph", "OpenAI GPT-4", "Next.js", "MongoDB", "Web Scraping"],
+      "github": "[Repo will be public upon development]",
+      "featured": false,
+      "categories": ["AI/ML", "Generative AI", "Automation", "Full-Stack"],
+      "image": "https://i.postimg.cc/SRjy3CvP/image.png",
+      "status": "Concept",
+      "priority": 6
+    }
+  ],
+  "publications": [
+    {
+      "title": "Multi-Agent Role Specialization in Large Language Models: An Efficient Coordination Framework",
+      "venue": "arXiv",
+      "status": "Awaiting Publication",
+      "date": "Aug 2025",
+      "description": "Research on multimodal AI systems for accessibility enhancement",
+      "category": "research"
+    },
+    {
+      "title": "HackRx 6.0: How We Built an LLM-Powered Intelligent Query–Retrieval System (and Made it to the Finals 🚀)",
+      "venue": "Medium",
+      "url": "-",
+      "date": "Aug 2025",
+      "description": "A breakdown of the architecture behind our finalist LLM query system for HackRx 6.0",
+      "category": "Case Study"
+    },
+    {
+      "title": "Coming soon",
+      "venue": "-",
+      "url": "-",
+      "date": "-",
+      "description": "-",
+      "category": "blog"
+    }
+  ],
+  
+  "certifications": [
+    {
+      "id": 1,
+      "title": "Deep Learning Specialization",
+      "provider": "Coursera",
+      "year": "2023",
+      "description": "Comprehensive deep learning specialization covering neural networks, optimization, and advanced architectures",
+      "certificates": [
+        {
+          "url": "https://coursera.org/verify/JXGWAGQ34VTY",
+          "title": "Advanced Learning Algorithms",
+          "year": "2022",
+          "credentialId": "JXGWAGQ34VTY"
+        },
+        {
+          "url": "https://coursera.org/verify/FCSKKCABZXJR",
+          "title": "Sequence Models",
+          "year": "2023",
+          "credentialId": "FCSKKCABZXJR"
+        },
+        {
+          "url": "https://coursera.org/verify/9SWQRKTMS85Y",
+          "title": "Convolutional Neural Networks",
+          "year": "2023",
+          "credentialId": "9SWQRKTMS85Y"
+        },
+        {
+          "url": "https://www.coursera.org/account/accomplishments/verify/RNJFP74S7RYF",
+          "title": "Supervised Machine Learning: Regression and Classification",
+          "year": "2022",
+          "credentialId": "RNJFP74S7RYF"
+        }
+      ],
+      "skills": ["Neural Networks", "Computer Vision", "Natural Language Processing", "Convolutional Neural Networks", "TensorFlow", "Supervised Learning", "Unsupervised Learning"]
+    },
+    {
+      "id": 2,
+      "title": "Microsoft Azure Fundamentals",
+      "provider": "Coursera",
+      "year": "2024",
+      "description": "Azure cloud services, architecture, and deployment strategies for enterprise applications",
+      "certificates": [
+        {
+          "url": "https://www.coursera.org/account/accomplishments/verify/9ZXJV8ATL52V",
+          "title": "Microsoft Azure Management Tools and Security Solutions",
+          "year": "2024",
+          "credentialId": "9ZXJV8ATL52V"
+        },
+        {
+          "url": "https://www.coursera.org/account/accomplishments/verify/HZMYP7MHNL4X",
+          "title": "Microsoft Azure Services and Lifecycles",
+          "year": "2024",
+          "credentialId": "HZMYP7MHNL4X"
+        },
+        {
+          "url": "https://www.coursera.org/account/accomplishments/verify/X85NDRLLFGD2",
+          "title": "Introduction to Microsoft Azure Cloud Services",
+          "year": "2024",
+          "credentialId": "X85NDRLLFGD2"
+        }
+      ],
+      "skills": ["Cloud Computing", "Azure Services", "Cloud Architecture", "DevOps"]
+    },
+    {
+      "id": 3,
+      "title": "Kubernetes Fundamentals",
+      "provider": "LinkedIn Learning",
+      "year": "2024",
+      "certificates": [
+        {
+          "url": "https://drive.google.com/drive/u/1/folders/1dr8EfTztRF8BeTUbG6rtpocDs5RvCgpH",
+          "title": "Kubernetes Fundamentals",
+          "year": "2024",
+          "credentialId": "73e74bbff766d825612bbc361791644140c59fed0eb11c811275ff4ca9969689"
+        }
+      ],
+      "description": "Container orchestration, cluster management, and cloud-native application deployment",
+      "skills": ["Container Orchestration", "DevOps", "Cloud Native", "Microservices"]
+    }
+  ],
+  "seo": {
+    "title": "Pratham Patil - Generative AI Engineer & Machine Learning Engineer",
+    "description": "Associate Software Engineer at Lowe's specializing in AI-driven automation, Full-Stack development and accessibility technology. Expert in Python, React.js, and cloud technologies.",
+    "keywords": ["Pratham Patil", "AI Engineer", "ML Engineer", "Data Analyst", "Python", "Gen AI Engineer", "Machine Learning", "Accessibility Technology", "Data Scientist", "Software Engineer", "Pune", "Generative AI", "Modern College Of Engineering Pune","Aroma Brand Solutions","ML Projects","Pratham","Pratham Patil Portfolio", "AI Projects", "Full-Stack Developer", "Software Engineer"],
+    "ogImage": "/pratham-profile.png",
+    "googleSiteVerification": "oNrOrBYC8Dz7PNuaUMPlYXCVWaPbmLofyH5Q9EoXg50",
+    "icon": {
+      "icon": "/web-app-manifest.png",
+      "appleTouchIcon": "/apple-touch-icon.png"
+    }
+  }
+}
