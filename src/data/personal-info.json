@@ -3,7 +3,7 @@
     "name": "Pratham Patil",
     "nickname": "Pratham",
     "title": "AI & ML Engineer",
-    "company": "",
+    "company": "Aroma Brand Solutions",
     "location": "Pune, India",
     "email": "prathamlpatil04@gmail.com",
     "phone": "+91-9356854392",
@@ -36,7 +36,7 @@
     },
     "email": "mailto:prathamlpatil04@gmail.com",
     "phone": "tel:+919356854392",
-    "resume": "https://drive.google.com/file/d/1YlAp1w9RoGmIC4iwQhms1r6eFVWl_jNC/view"
+    "resume": "https://drive.google.com/file/d/1PZE9TN0OUecXU9GbUnrpFfKpBDaV3-ui/view?usp=sharing"
   },
   "skills": {
     "languages": [
@@ -150,7 +150,7 @@
       "description": "An ambitious project concept to create an autonomous AI agent that analyzes GitHub repositories and automatically generates narrated, YouTube-style video tutorials.",
       "longDescription": "Slated as my final-year engineering project, CodeNarrator will tackle the difficult problem of developer onboarding. The plan is to use a sophisticated multi-agent system with LangGraph to parse code, generate coherent scripts, create visuals like flowcharts, and render a final video with a text-to-speech voiceover. The goal is to turn complex codebases into easy-to-understand narrated stories.",
       "technologies": ["Python", "LangChain", "LangGraph", "Hugging Face", "FastAPI", "Docker", "FFmpeg", "GCP"],
-      "github": "",
+      "github": "[Repo will be public upon development]",
       "featured": true,
       "categories": ["AI/ML", "Developer Tools", "Generative AI", "Automation"],
       "image": "https://i.postimg.cc/FsHrNjXq/Codenarrator.png",
@@ -164,7 +164,7 @@
       "description": "Automated vehicle theft detection system for parking facilities using computer vision and barcode scanning technology.",
       "longDescription": "Python-based security system that detects vehicle theft in real-time using moving object detection, Frame differencing techniques and barcode scanning for parking entry validation. Notifies security personnel about unauthorized vehicle movements with automated monitoring.",
       "technologies": ["Python", "OpenCV", "Computer Vision", "Digital Image Processing"],
-      "github": "https://github.com/Shades-en/Car-theft-detection-Parking",
+      "github": "[Repo will be public upon development]",
       "featured": false,
       "categories": ["AI/ML", "Security", "Computer Vision"],
       "image": "https://i.postimg.cc/SKKtWd2H/image.png",
@@ -208,9 +208,9 @@
   
   "seo": {
     "title": "Pratham Patil - Generative AI Engineer & Machine Learning Engineer",
-    "description": "Associate Software Engineer at Lowe's specializing in AI-driven automation, Full-Stack development and accessibility technology. Expert in Python, React.js, and cloud technologies.",
+    "description": "AI and ML Engineer studied from Modern College of Engineering Pune",
     "keywords": ["Pratham Patil", "AI Engineer", "ML Engineer", "Data Analyst", "Python", "Gen AI Engineer", "Machine Learning", "Accessibility Technology", "Data Scientist", "Software Engineer", "Pune", "Generative AI", "Modern College Of Engineering Pune","Aroma Brand Solutions","ML Projects","Pratham","Pratham Patil Portfolio", "AI Projects", "Full-Stack Developer", "Software Engineer"],
-    "ogImage": "/pratham-profile.png",
+    "ogImage": "/Prathampatil.png",
     "googleSiteVerification": "oNrOrBYC8Dz7PNuaUMPlYXCVWaPbmLofyH5Q9EoXg50",
     "icon": {
       "icon": "/web-app-manifest.png",
