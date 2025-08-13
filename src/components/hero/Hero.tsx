@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import ScrollButton from '../ScrollButton';
 import ProfileImage from './ProfileImage';
 import personalInfo from '@/data/personal-info.json';
+import Typewriter from './Typewriter';
 
 const Hero: React.FC = () => {
 
@@ -41,7 +42,10 @@ const Hero: React.FC = () => {
             </h1>
         
             <p className="text-xl md:text-2xl font-normal lg:font-light text-muted-foreground mb-8 leading-relaxed max-w-2xl">
-              {personalInfo.personal.tagline}
+              <Typewriter 
+                strings={["AI Engineer", "ML Developer", "Gen AI Enthusiast"]}
+                className="font-semibold text-primary"
+              />
             </p>
 
             <p className="hidden xs-tall:block text-sm md:text-lg lg:text-base text-muted-foreground max-w-2xl leading-relaxed">

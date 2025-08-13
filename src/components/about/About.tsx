@@ -28,8 +28,7 @@ const About: React.FC = () => {
           <HowIWork />
         </div>
 
-        {/* Stats Section */}
-        <Stats />
+  {/* Stats Section removed as requested */}
       </div>
     </section>
   );

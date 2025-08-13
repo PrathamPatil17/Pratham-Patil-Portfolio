@@ -3,7 +3,7 @@
     "name": "Pratham Patil",
     "nickname": "Pratham",
     "title": "AI & ML Engineer",
-    "company": "Lowe's Companies, Inc.",
+    "company": "",
     "location": "Pune, India",
     "email": "prathamlpatil04@gmail.com",
     "phone": "+91-9356854392",
@@ -40,41 +40,39 @@
   },
   "skills": {
     "languages": [
-      { "name": "Python", "experience": "5+ years", "context": "AI/ML, automation, APIs", "category": "Programming Languages", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
-      { "name": "JavaScript", "experience": "3+ years", "context": "Full-stack, React, Node.js", "category": "Programming Languages", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
-      { "name": "TypeScript", "experience": "2+ years", "context": "Enterprise React/Next.js", "category": "Programming Languages", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
-      { "name": "Java", "experience": "1+ year", "context": "Spring Boot, enterprise", "category": "Programming Languages", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
-      { "name": "C", "experience": "Academic", "context": "Systems, algorithms", "category": "Programming Languages", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" },
-      { "name": "SQL", "experience": "2+ years", "context": "Database design, queries", "category": "Programming Languages", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" }
+  { "name": "Python", "context": "Data Science, AI/ML, APIs", "category": "Programming & Scripting Languages", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+  { "name": "Java", "context": "Backend, enterprise apps", "category": "Programming & Scripting Languages", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
+  { "name": "C++", "context": "Systems programming, algorithms", "category": "Programming & Scripting Languages", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" },
+  { "name": "SQL", "context": "Database design, queries", "category": "Programming & Scripting Languages", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" }
     ],
     "ai_ml": [
-      { "name": "HuggingFace", "experience": "1+ year", "context": "Multimodal AI, fine-tuning", "category": "AI/ML", "icon": "https://huggingface.co/front/assets/huggingface_logo-noborder.svg" },
-      { "name": "Langchain", "experience": "2+ year", "context": "RAG systems, AI agents", "category": "AI/ML", "icon": "https://python.langchain.com/img/brand/wordmark.png" },
-      { "name": "OpenAI SDK", "experience": "1+ year", "context": "GPT integration, automation", "category": "AI/ML", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/openai/openai-original.svg" },
-      { "name": "Google ADK", "experience": "Current", "context": "Enterprise AI solutions", "category": "AI/ML", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" },
-      { "name": "Agents SDK", "experience": "Current", "context": "AI agent development", "category": "AI/ML", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
-      { "name": "Arize AI", "experience": "Current", "context": "ML monitoring, tracking", "category": "AI/ML", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" }
+  { "name": "TensorFlow", "context": "Deep learning models", "category": "AI / ML & Data Science", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" },
+  { "name": "Scikit-learn", "context": "Machine learning algorithms", "category": "AI / ML & Data Science", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikit-learn/scikit-learn-original.svg" },
+  { "name": "Pandas", "context": "Data manipulation, analysis", "category": "AI / ML & Data Science", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" },
+  { "name": "Matplotlib", "context": "Data visualization", "category": "AI / ML & Data Science", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" },
+  { "name": "LangChain", "context": "RAG systems, AI agents", "category": "AI / ML & Data Science", "icon": "https://python.langchain.com/img/brand/wordmark.png" },
+  { "name": "OpenAI API", "context": "GPT integration, automation", "category": "AI / ML & Data Science", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/openai/openai-original.svg" },
+  { "name": "Hugging Face", "context": "Multimodal AI, fine-tuning", "category": "AI / ML & Data Science", "icon": "https://huggingface.co/front/assets/huggingface_logo-noborder.svg" },
+  { "name": "Generative AI", "context": "LLM-powered applications", "category": "AI / ML & Data Science", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/openai/openai-original.svg" }
     ],
     "backend": [
-      { "name": "FastAPI", "experience": "2+ year", "context": "High-performance APIs", "category": "Backend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" },
-      { "name": "Node.js", "experience": "3+ years", "context": "RESTful APIs, microservices", "category": "Backend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
-      { "name": "Django", "experience": "1+ year", "context": "Web apps, admin panels", "category": "Backend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" },
-      { "name": "Flask", "experience": "1+ year", "context": "Lightweight APIs", "category": "Backend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" },
-      { "name": "Spring Boot", "experience": "1+ year", "context": "Enterprise Java apps", "category": "Backend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" }
+  { "name": "FastAPI", "context": "High-performance APIs", "category": "Backend & Application Development", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" },
+  { "name": "Streamlit", "context": "Interactive ML apps", "category": "Backend & Application Development", "icon": "https://streamlit.io/images/brand/streamlit-logo-primary-colormark-darktext.svg" },
+  { "name": "HTML/CSS", "context": "Web interface design", "category": "Backend & Application Development", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" }
     ],
     "frontend": [
-      { "name": "React.js", "experience": "3+ years", "context": "MicroFrontends, SPAs", "category": "Frontend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
-      { "name": "Next.js", "experience": "1+ year", "context": "SSG/SSR applications", "category": "Frontend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" },
-      { "name": "ThreeJS", "experience": "Project-based", "context": "3D visualizations", "category": "Frontend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/threejs/threejs-original.svg" },
-      { "name": "HTML/CSS", "experience": "4+ years", "context": "Responsive design", "category": "Frontend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" }
+  { "name": "Tableau", "context": "Interactive dashboards", "category": "Tools & Platforms", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tableau/tableau-original.svg" },
+  { "name": "Power BI", "context": "Business intelligence reporting", "category": "Tools & Platforms", "icon": "https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" },
+  { "name": "Excel", "context": "Data analysis, reporting", "category": "Tools & Platforms", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/excel/excel-original.svg" },
+  { "name": "Docker", "context": "Containerization", "category": "Tools & Platforms", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
+  { "name": "Git", "context": "Version control", "category": "Tools & Platforms", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+  { "name": "GitHub", "context": "Code collaboration", "category": "Tools & Platforms", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" }
     ],
     "cloud_databases": [
-      { "name": "Microsoft Azure", "experience": "Project-based", "context": "Cloud deployment, Logic Apps", "category": "Cloud & Databases", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" },
-      { "name": "Kubernetes", "experience": "Project-based", "context": "Pod deployment, clusters", "category": "Cloud & Databases", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" },
-      { "name": "Docker", "experience": "2+ years", "context": "Containerization", "category": "Cloud & Databases", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
-      { "name": "MongoDB", "experience": "2+ year", "context": "NoSQL databases", "category": "Cloud & Databases", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
-      { "name": "Redis", "experience": "1+ year", "context": "Caching, sessions", "category": "Cloud & Databases", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" },
-      { "name": "Linux Systems", "experience": "1+ years", "context": "Terminal commands, system administration", "category": "Cloud & Databases", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" }
+  { "name": "MySQL", "context": "Relational databases", "category": "Databases & Cloud", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
+  { "name": "MongoDB", "context": "NoSQL databases", "category": "Databases & Cloud", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
+  { "name": "ChromaDB", "context": "Vector database for embeddings", "category": "Databases & Cloud", "icon": "https://www.trychroma.com/assets/images/chroma-logo.svg" },
+  { "name": "Pinecone", "context": "Scalable vector search", "category": "Databases & Cloud", "icon": "https://avatars.githubusercontent.com/u/78085578?s=200&v=4" }
     ]
   },
   "experience": [
@@ -143,7 +141,7 @@
       "categories": ["Data Analysis", "SQL", "Business Intelligence"],
       "image": "https://i.postimg.cc/jjZv00HB/Walmart.png",
       "status": "Data Analysis",
-      "priority": 5
+      "priority": 3
     },
     {
       "id": 4,
@@ -160,20 +158,6 @@
       "priority": 4
     },
     {
-      "id": 5,
-      "title": "Promonade",
-      "subtitle": "Promotions Management UI",
-      "description": "Full-stack application for Promonade promotions management system built with modern React and Spring boot technologies and beautiful UI components.",
-      "longDescription": "Modern React frontend for promotions management featuring responsive design with Tailwind CSS, interactive charts with Recharts, and comprehensive UI components using Shadcn. Integrates with backend promotions management system.",
-      "technologies": ["React.js", "Spring Boot", "Java", "PostgreSQL", "Tailwind CSS", "Shadcn", "Lucide Icons", "Recharts"],
-      "github": "https://github.com/Shades-en/promonade-ui",
-      "featured": false,
-      "categories": ["Fullstack Development", "Enterprise"],
-      "image": "https://i.postimg.cc/3JByPFNL/image.png",
-      "status": "Completed",
-      "priority": 8
-    },
-    {
       "id": 6,
       "title": "Car Theft Detection System",
       "subtitle": "Automated Parking Security",
@@ -185,35 +169,7 @@
       "categories": ["AI/ML", "Security", "Computer Vision"],
       "image": "https://i.postimg.cc/SKKtWd2H/image.png",
       "status": "Active Development",
-      "priority": 3
-    },
-    {
-      "id": 7,
-      "title": "Bubble Bop",
-      "subtitle": "QR-Based Restaurant Management",
-      "description": "Hotel management system that takes orders for each table based on scanning QR codes available at tables, streamlining the dining experience.",
-      "longDescription": "Django-based restaurant management system featuring QR code table ordering, MongoDB integration, email notifications, and comprehensive order management. Includes both customer-facing ordering interface and restaurant management dashboard.",
-      "technologies": ["Python", "Django", "MongoDB", "HTML", "CSS", "JavaScript"],
-      "github": "https://github.com/Shades-en/Bubble-Bop-Food-Dine-In",
-      "featured": false,
-      "categories": ["Fullstack Development", "Restaurant Tech"],
-      "image": "https://i.postimg.cc/fWPqYYDr/image.png",
-      "status": "Completed",
-      "priority": 9
-    },
-    {
-      "id": 8,
-      "title": "Myxable",
-      "subtitle": "File Conversion Platform",
-      "description": "Open-source multiformat bulk file conversion platform that won 2nd place at Reva Hack 2021 hackathon.",
-      "longDescription": "Django-based file conversion platform supporting multiple file formats with bulk processing capabilities. Features user-friendly interface for seamless file format conversions, developed as part of hackathon competition.",
-      "technologies": ["Python", "Django", "File Processing", "Web Development"],
-      "github": "https://github.com/Shades-en/myxable",
-      "featured": false,
-      "categories": ["Fullstack Development", "Utility"],
-      "image": "https://i.postimg.cc/j2hVS5Jb/image.png",
-      "status": "Completed",
-      "priority": 7
+      "priority": 6
     },
     {
       "id": 9,
@@ -227,7 +183,7 @@
       "categories": ["AI/ML", "Generative AI", "Automation", "Full-Stack"],
       "image": "https://i.postimg.cc/SRjy3CvP/image.png",
       "status": "Concept",
-      "priority": 6
+      "priority": 5
     }
   ],
   "publications": [
@@ -246,97 +202,10 @@
       "date": "Aug 2025",
       "description": "A breakdown of the architecture behind our finalist LLM query system for HackRx 6.0",
       "category": "Case Study"
-    },
-    {
-      "title": "Coming",
-      "venue": "-",
-      "url": "-",
-      "date": "Jul 2025",
-      "description": "Experiment on using AI to create a web portfolio",
-      "category": "blog"
     }
   ],
   
-  "certifications": [
-    {
-      "id": 1,
-      "title": "Deep Learning Specialization",
-      "provider": "Coursera",
-      "year": "2023",
-      "description": "Comprehensive deep learning specialization covering neural networks, optimization, and advanced architectures",
-      "certificates": [
-        {
-          "url": "https://coursera.org/verify/JXGWAGQ34VTY",
-          "title": "Advanced Learning Algorithms",
-          "year": "2022",
-          "credentialId": "JXGWAGQ34VTY"
-        },
-        {
-          "url": "https://coursera.org/verify/FCSKKCABZXJR",
-          "title": "Sequence Models",
-          "year": "2023",
-          "credentialId": "FCSKKCABZXJR"
-        },
-        {
-          "url": "https://coursera.org/verify/9SWQRKTMS85Y",
-          "title": "Convolutional Neural Networks",
-          "year": "2023",
-          "credentialId": "9SWQRKTMS85Y"
-        },
-        {
-          "url": "https://www.coursera.org/account/accomplishments/verify/RNJFP74S7RYF",
-          "title": "Supervised Machine Learning: Regression and Classification",
-          "year": "2022",
-          "credentialId": "RNJFP74S7RYF"
-        }
-      ],
-      "skills": ["Neural Networks", "Computer Vision", "Natural Language Processing", "Convolutional Neural Networks", "TensorFlow", "Supervised Learning", "Unsupervised Learning"]
-    },
-    {
-      "id": 2,
-      "title": "Microsoft Azure Fundamentals",
-      "provider": "Coursera",
-      "year": "2024",
-      "description": "Azure cloud services, architecture, and deployment strategies for enterprise applications",
-      "certificates": [
-        {
-          "url": "https://www.coursera.org/account/accomplishments/verify/9ZXJV8ATL52V",
-          "title": "Microsoft Azure Management Tools and Security Solutions",
-          "year": "2024",
-          "credentialId": "9ZXJV8ATL52V"
-        },
-        {
-          "url": "https://www.coursera.org/account/accomplishments/verify/HZMYP7MHNL4X",
-          "title": "Microsoft Azure Services and Lifecycles",
-          "year": "2024",
-          "credentialId": "HZMYP7MHNL4X"
-        },
-        {
-          "url": "https://www.coursera.org/account/accomplishments/verify/X85NDRLLFGD2",
-          "title": "Introduction to Microsoft Azure Cloud Services",
-          "year": "2024",
-          "credentialId": "X85NDRLLFGD2"
-        }
-      ],
-      "skills": ["Cloud Computing", "Azure Services", "Cloud Architecture", "DevOps"]
-    },
-    {
-      "id": 3,
-      "title": "Kubernetes Fundamentals",
-      "provider": "LinkedIn Learning",
-      "year": "2024",
-      "certificates": [
-        {
-          "url": "https://drive.google.com/drive/u/1/folders/1dr8EfTztRF8BeTUbG6rtpocDs5RvCgpH",
-          "title": "Kubernetes Fundamentals",
-          "year": "2024",
-          "credentialId": "73e74bbff766d825612bbc361791644140c59fed0eb11c811275ff4ca9969689"
-        }
-      ],
-      "description": "Container orchestration, cluster management, and cloud-native application deployment",
-      "skills": ["Container Orchestration", "DevOps", "Cloud Native", "Microservices"]
-    }
-  ],
+  
   "seo": {
     "title": "Pratham Patil - Generative AI Engineer & Machine Learning Engineer",
     "description": "Associate Software Engineer at Lowe's specializing in AI-driven automation, Full-Stack development and accessibility technology. Expert in Python, React.js, and cloud technologies.",

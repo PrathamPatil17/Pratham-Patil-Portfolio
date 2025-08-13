@@ -32,19 +32,22 @@ const Projects: React.FC = () => {
       return priorityA - priorityB;
     });
 
-  // Dynamically generate categories from all project categories
-  const allCategories = projects.flatMap(project => project.categories);
-  const uniqueCategories = Array.from(new Set(allCategories)).sort((a, b) => a.localeCompare(b));
-  const categories = ['All', ...uniqueCategories];
+  // Minimal, relevant categories for current projects
+  const minimalCategories = ['All', 'AI/ML', 'Business Intelligence', 'Data Analysis', 'Data Visualization', 'Developer Tools', 'FinTech'];
+  // Only include categories that are actually present in the projects
+  const usedCategories = projects
+    .flatMap(project => project.categories)
+    .filter((cat, idx, arr) => minimalCategories.includes(cat) && arr.indexOf(cat) === idx);
+  const categories = ['All', ...usedCategories];
 
   return (
     <section id="projects" className="py-20 bg-muted/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+        <div className="text-center mb-8">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Featured <span className="gradient-text">Projects</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Innovative solutions that bridge AI/ML technology with real-world impact
           </p>
         </div>

@@ -22,40 +22,40 @@ interface SkillCategoryData {
 const Skills: React.FC = () => {
   const skillCategories: readonly SkillCategoryData[] = [
     {
-      title: 'Programming Languages',
+      title: 'Programming & Scripting Languages',
       icon: Code2,
       skills: personalInfo.skills.languages
     },
     {
-      title: 'AI/ML Technologies',
+      title: 'AI / ML & Data Science',
       icon: Brain,
       skills: personalInfo.skills.ai_ml
     },
     {
-      title: 'Backend Development',
+      title: 'Backend & Application Development',
       icon: Server,
       skills: personalInfo.skills.backend
     },
     {
-      title: 'Frontend Development',
-      icon: Monitor,
-      skills: personalInfo.skills.frontend
-    },
-    {
-      title: 'Cloud & Databases',
+      title: 'Databases & Cloud',
       icon: Cloud,
       skills: personalInfo.skills.cloud_databases
+    },
+    {
+      title: 'Tools & Platforms',
+      icon: Monitor,
+      skills: personalInfo.skills.frontend
     }
   ];
 
   return (
     <section id="skills" className="py-16 bg-gradient-to-b from-background to-secondary/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+        <div className="text-center mb-8">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Technical <span className="gradient-text">Expertise</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Technologies I&apos;ve worked with in real-world projects and professional environments
           </p>
         </div>

@@ -36,10 +36,8 @@ const getExperienceIcon = (experience: string) => {
 };
 
 const SkillItem: React.FC<SkillItemProps> = ({ skill }) => {
-  const ExperienceIcon = getExperienceIcon(skill.experience);
-
   return (
-    <div className="flex items-center justify-between py-1.5 px-2 rounded-md bg-secondary/30 hover:bg-primary/10 transition-colors duration-200">
+    <div className="flex items-center py-1.5 px-2 rounded-md bg-secondary/30 hover:bg-primary/10 transition-colors duration-200">
       <div className="lg:flex items-center gap-2 min-w-0 flex-1">
         <div className="flex items-center gap-2 flex-shrink-0">
           <TechnologyIcon
@@ -56,15 +54,6 @@ const SkillItem: React.FC<SkillItemProps> = ({ skill }) => {
           {skill.context}
         </span>
       </div>
-      <Badge 
-        variant={getExperienceBadgeVariant(skill.experience)}
-        className="text-xs flex items-center gap-1 px-1.5 py-0.5 ml-2 flex-shrink-0"
-      >
-        <ExperienceIcon size={8} />
-        <span className="text-xs md:text-sm">
-          {skill.experience.replace('+ years', 'y+').replace('+ year', 'y+')}
-        </span>
-      </Badge>
     </div>
   );
 };
