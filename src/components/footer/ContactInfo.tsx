@@ -11,7 +11,7 @@ const ContactInfo: React.FC = () => {
           Ready to work together?
         </p>
         <a 
-          href="mailto:owaisiqbal2013@gmail.com"
+          href="mailto:prathamlpatil04@gmail.com"
           className="block text-sm md:text-base text-primary hover:text-accent transition-colors duration-200 font-medium"
         >
           {personalInfo.personal.email}
