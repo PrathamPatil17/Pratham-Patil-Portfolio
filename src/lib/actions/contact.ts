@@ -51,7 +51,7 @@ export async function sendContactEmail(formData: ContactFormData): Promise<Conta
 
     // Send email using Resend
     const { data, error } = await resend.emails.send({
-      from: 'Portfolio Contact <noreply@resend.dev>', // Using Resend's default domain
+      from: 'onboarding@resend.dev',
       to: [recipientEmail],
       replyTo: formData.email,
       subject: `Portfolio Contact: ${formData.subject}`,

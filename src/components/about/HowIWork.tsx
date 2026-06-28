@@ -1,5 +1,5 @@
 import React from 'react';
-import { Code2, Lightbulb, Users, Zap } from 'lucide-react';
+import { Telescope, BarChart2, Rocket, Layers } from 'lucide-react';
 
 interface Principle {
   readonly icon: React.ReactElement;
@@ -10,24 +10,24 @@ interface Principle {
 const HowIWork: React.FC = () => {
   const principles: Principle[] = [
     {
-      icon: <Code2 size={24} className="text-black stroke-2" />,
-      title: "Clean Code",
-      description: "Writing maintainable, scalable code that stands the test of time"
+      icon: <Telescope size={24} className="text-black stroke-2" />,
+      title: "Curiosity as a Skill",
+      description: "Treating every new paper, framework, or dataset as an opportunity to build something better than yesterday."
     },
     {
-      icon: <Lightbulb size={24} className="text-black stroke-2" />,
-      title: "Innovation",
-      description: "Staying ahead of technology trends and implementing cutting-edge solutions"
+      icon: <BarChart2 size={24} className="text-black stroke-2" />,
+      title: "From Raw to Insight",
+      description: "Transforming messy, unstructured data into clean pipelines and dashboards that business teams can actually act on."
     },
     {
-      icon: <Users size={24} className="text-black stroke-2" />,
-      title: "Collaboration",
-      description: "Working effectively with cross-functional teams to deliver exceptional results"
+      icon: <Rocket size={24} className="text-black stroke-2" />,
+      title: "Model Meets Reality",
+      description: "Bridging the gap between research and production — every model I build is evaluated, monitored, and deployed with real-world constraints in mind."
     },
     {
-      icon: <Zap size={24} className="text-black stroke-2" />,
-      title: "Performance",
-      description: "Optimizing applications for speed, accessibility, and user experience"
+      icon: <Layers size={24} className="text-black stroke-2" />,
+      title: "Full Stack of Intelligence",
+      description: "From raw data ingestion to model inference to front-end dashboards — I connect the entire intelligence stack, not just one layer of it."
     }
   ];
 

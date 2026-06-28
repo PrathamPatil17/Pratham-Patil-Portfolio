@@ -19,7 +19,7 @@ const ProfileImage: React.FC<ProfileImageProps> = ({ size, className = '' }) => 
       <div className={`${sizeClasses[size]} rounded-full bg-slate-700 overflow-hidden glass-card p-2`}>
         <Image 
           src={personalInfo.personal.profileImage} 
-          alt="Owais Iqbal - Full-Stack Developer & AI/ML Engineer" 
+          alt="Pratham Patil - Generative AI Engineer" 
           width={320}
           height={320}
           className="w-full h-full object-cover rounded-full scale-125"

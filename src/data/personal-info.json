@@ -1,424 +1,693 @@
 {
   "personal": {
-    "name": "Owais Iqbal",
-    "nickname": "Shades",
-    "title": "Associate Software Engineer",
-    "company": "Lowe's Companies, Inc.",
-    "location": "Bangalore, India",
-    "email": "owaisiqbal2013@gmail.com",
-    "phone": "+91-6362185244",
-    "tagline": "Generative AI & Full-Stack Engineer",
-    "bio": "I architect intelligent solutions at the intersection of AI and full-stack development. From building accessibility-first applications to automating complex workflows, I transform ideas into impactful digital experiences.",
-    "closingBio": "Ready to collaborate on something extraordinary? I'm always excited to connect with fellow innovators, explore cutting-edge projects, and push the boundaries of what's possible with technology. Let's build the future together.",
+    "name": "Pratham Patil",
+    "nickname": "Pratham",
+    "title": "Generative AI Engineer",
+    "company": "PES's Modern College of Engineering",
+    "location": "Pune, India",
+    "email": "prathamlpatil04@gmail.com",
+    "phone": "+91 9356854392",
+    "tagline": "AI/ML Engineer \u00b7 Software Developer",
+    "bio": "AI & ML engineering graduate specializing in Generative AI \u2014 building end-to-end LLM systems across RAG pipelines, agentic document workflows, and production observability stacks. Proficient with the modern GenAI toolchain: LangChain, LangGraph, ChromaDB, FastAPI and GitHub Actions CI/CD.",
+    "closingBio": "Looking to join a team where shipping real AI products matters more than experimenting in notebooks. Let's build something meaningful together.",
     "story": [
-      "With over 4 years of experience in full-stack development and more than 2 years of experience in AI/ML Engineering, I've had the privilege of working with vibrant teams across enterprise companies, building everything from MVPs to large-scale applications serving millions of users.", 
-      "My journey has been defined by creating meaningful impact through technology. From research publications to innovation competitions, I've consistently focused on building solutions that genuinely improve people's lives. Whether working on accessibility, security, or wellness applications, I'm driven by the belief that technology should be both powerful and purposeful.", 
-      "When I'm not coding, you'll find me contributing to open-source projects, writing technical articles, or maybe gaming. I believe in continuous learning and sharing knowledge with the community."],
-    "profileImage": "/owais-profile2.png"
+      "I'm an AI & ML engineering graduate from PES's Modern College of Engineering, Pune, specializing in Generative AI. I build end-to-end LLM systems \u2014 from RAG pipelines and agentic document workflows to production observability stacks.",
+      "My work spans the modern GenAI toolchain: LangChain, LangGraph, ChromaDB, FastAPI, and GitHub Actions CI/CD. I've shipped projects like CodeNarrator, an autonomous documentation and video synthesis system, and a full LLM observability pipeline with RAGAS-based CI/CD evaluation.",
+      "I believe in building AI products that work in production, not just in notebooks. Every project I take on is driven by real-world utility \u2014 measurable performance, clean architecture, and observable systems."
+    ],
+    "profileImage": "/pratham-profile.png"
   },
   "stats": {
-    "projects": "10+",
-    "yearsExperience": "4+",
-    "technologiesMastered": "30+"
+    "projects": "7+",
+    "yearsExperience": "1+",
+    "technologiesMastered": "45+"
   },
   "social": {
     "linkedin": {
-      "url": "https://www.linkedin.com/in/owais-iqbal-3a3363225",
-      "username": "owais-iqbal-3a3363225"
+      "url": "https://www.linkedin.com/in/prathamlpatil/",
+      "username": "prathamlpatil"
     },
     "github": {
-      "url": "https://github.com/Shades-en",
-      "username": "Shades-en"
+      "url": "https://github.com/PrathamPatil17",
+      "username": "PrathamPatil17"
+    },
+    "instagram": {
+      "url": "https://www.instagram.com/pratham_patil_17/",
+      "username": "pratham_patil_17"
+    },
+    "twitter": {
+      "url": "https://x.com/PrathamLPatil",
+      "username": "PrathamLPatil"
     },
     "medium": {
-      "url": "https://medium.com/@owaisiqbal2013",
-      "username": "owaisiqbal2013"
+      "url": "https://medium.com/@prathamlpatil04",
+      "username": "prathamlpatil04"
     },
-    "email": "mailto:owaisiqbal2013@gmail.com",
-    "phone": "tel:+916362185244",
-    "resume": "https://drive.google.com/file/d/1YlAp1w9RoGmIC4iwQhms1r6eFVWl_jNC/view"
+    "email": "mailto:prathamlpatil04@gmail.com",
+    "phone": "tel:+919356854392",
+    "resume": "https://drive.google.com/file/d/1opedj4o5L1P4gAXuqExyej49mD4gvjO8/view?usp=drive_link"
   },
   "skills": {
     "languages": [
-      { "name": "Python", "experience": "5+ years", "context": "AI/ML, automation, APIs", "category": "Programming Languages", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
-      { "name": "JavaScript", "experience": "3+ years", "context": "Full-stack, React, Node.js", "category": "Programming Languages", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
-      { "name": "TypeScript", "experience": "2+ years", "context": "Enterprise React/Next.js", "category": "Programming Languages", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
-      { "name": "Java", "experience": "1+ year", "context": "Spring Boot, enterprise", "category": "Programming Languages", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
-      { "name": "C", "experience": "Academic", "context": "Systems, algorithms", "category": "Programming Languages", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" },
-      { "name": "SQL", "experience": "2+ years", "context": "Database design, queries", "category": "Programming Languages", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" }
+      {
+        "name": "Python",
+        "context": "AI/ML, automation, APIs",
+        "category": "Programming Languages",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+      },
+      {
+        "name": "JavaScript",
+        "context": "Full-stack, React, Node.js",
+        "category": "Programming Languages",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+      },
+      {
+        "name": "Java",
+        "context": "Spring Boot, enterprise",
+        "category": "Programming Languages",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+      }
     ],
-    "ai_ml": [
-      { "name": "HuggingFace", "experience": "1+ year", "context": "Multimodal AI, fine-tuning", "category": "AI/ML", "icon": "https://huggingface.co/front/assets/huggingface_logo-noborder.svg" },
-      { "name": "Langchain", "experience": "2+ year", "context": "RAG systems, AI agents", "category": "AI/ML", "icon": "https://python.langchain.com/img/brand/wordmark.png" },
-      { "name": "OpenAI SDK", "experience": "1+ year", "context": "GPT integration, automation", "category": "AI/ML", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/openai/openai-original.svg" },
-      { "name": "Google ADK", "experience": "Current", "context": "Enterprise AI solutions", "category": "AI/ML", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" },
-      { "name": "Agents SDK", "experience": "Current", "context": "AI agent development", "category": "AI/ML", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
-      { "name": "Arize AI", "experience": "Current", "context": "ML monitoring, tracking", "category": "AI/ML", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" }
+    "gen_ai_llms": [
+      {
+        "name": "LangChain",
+        "context": "RAG systems, AI agents",
+        "category": "Generative AI & LLMs",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+      },
+      {
+        "name": "LangGraph",
+        "context": "Agentic workflows, multi-agent",
+        "category": "Generative AI & LLMs",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+      },
+      {
+        "name": "Hugging Face",
+        "context": "Transformers, fine-tuning",
+        "category": "Generative AI & LLMs",
+        "icon": "https://huggingface.co/front/assets/huggingface_logo-noborder.svg"
+      },
+      {
+        "name": "Transformers",
+        "context": "Pre-trained models, NLP",
+        "category": "Generative AI & LLMs",
+        "icon": "https://huggingface.co/front/assets/huggingface_logo-noborder.svg"
+      },
+      {
+        "name": "TensorFlow",
+        "context": "Deep learning, model training",
+        "category": "Generative AI & LLMs",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"
+      },
+      {
+        "name": "Scikit-learn",
+        "context": "ML pipelines, classification",
+        "category": "Generative AI & LLMs",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg"
+      },
+      {
+        "name": "Prompt Engineering",
+        "context": "LLM optimization, few-shot",
+        "category": "Generative AI & LLMs",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/openai/openai-original.svg"
+      },
+      {
+        "name": "OpenAI API",
+        "context": "GPT integration, automation",
+        "category": "Generative AI & LLMs",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/openai/openai-original.svg"
+      },
+      {
+        "name": "Google Gemini",
+        "context": "Multimodal AI, document workflows",
+        "category": "Generative AI & LLMs",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"
+      },
+      {
+        "name": "Whisper",
+        "context": "Speech-to-text transcription",
+        "category": "Generative AI & LLMs",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/openai/openai-original.svg"
+      }
     ],
-    "backend": [
-      { "name": "FastAPI", "experience": "2+ year", "context": "High-performance APIs", "category": "Backend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" },
-      { "name": "Node.js", "experience": "3+ years", "context": "RESTful APIs, microservices", "category": "Backend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
-      { "name": "Django", "experience": "1+ year", "context": "Web apps, admin panels", "category": "Backend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" },
-      { "name": "Flask", "experience": "1+ year", "context": "Lightweight APIs", "category": "Backend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" },
-      { "name": "Spring Boot", "experience": "1+ year", "context": "Enterprise Java apps", "category": "Backend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" }
+    "rag_agentic": [
+      {
+        "name": "RAG Pipelines",
+        "context": "Retrieval-augmented generation",
+        "category": "RAG & Agentic Systems",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+      },
+      {
+        "name": "ChromaDB",
+        "context": "Vector store, embeddings",
+        "category": "RAG & Agentic Systems",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+      },
+      {
+        "name": "FAISS",
+        "context": "Fast similarity search",
+        "category": "RAG & Agentic Systems",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+      },
+      {
+        "name": "Pinecone",
+        "context": "Managed vector database",
+        "category": "RAG & Agentic Systems",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+      },
+      {
+        "name": "Vector Databases",
+        "context": "Semantic storage, retrieval",
+        "category": "RAG & Agentic Systems",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+      },
+      {
+        "name": "Embedding Models",
+        "context": "Text vectorization",
+        "category": "RAG & Agentic Systems",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+      },
+      {
+        "name": "Semantic Search",
+        "context": "Hybrid retrieval, ranking",
+        "category": "RAG & Agentic Systems",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+      },
+      {
+        "name": "Multi-Agent Orchestration",
+        "context": "Agent coordination, pipelines",
+        "category": "RAG & Agentic Systems",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+      },
+      {
+        "name": "MCP",
+        "context": "Model Context Protocol",
+        "category": "RAG & Agentic Systems",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+      },
+      {
+        "name": "Tool Calling",
+        "context": "Function calling, LLM tools",
+        "category": "RAG & Agentic Systems",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+      }
     ],
-    "frontend": [
-      { "name": "React.js", "experience": "3+ years", "context": "MicroFrontends, SPAs", "category": "Frontend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
-      { "name": "Next.js", "experience": "1+ year", "context": "SSG/SSR applications", "category": "Frontend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" },
-      { "name": "ThreeJS", "experience": "Project-based", "context": "3D visualizations", "category": "Frontend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/threejs/threejs-original.svg" },
-      { "name": "HTML/CSS", "experience": "4+ years", "context": "Responsive design", "category": "Frontend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" }
+    "eval_observability": [
+      {
+        "name": "RAGAS",
+        "context": "RAG evaluation, faithfulness",
+        "category": "Eval & Observability",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+      },
+      {
+        "name": "Langfuse",
+        "context": "LLM tracing, per-call monitoring",
+        "category": "Eval & Observability",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+      },
+      {
+        "name": "MLflow",
+        "context": "Experiment tracking, eval pipelines",
+        "category": "Eval & Observability",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+      },
+      {
+        "name": "LLM Tracing",
+        "context": "Debugging, latency analysis",
+        "category": "Eval & Observability",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+      },
+      {
+        "name": "Quality Drift Detection",
+        "context": "Monitoring output quality over time",
+        "category": "Eval & Observability",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+      }
     ],
-    "cloud_databases": [
-      { "name": "Microsoft Azure", "experience": "Project-based", "context": "Cloud deployment, Logic Apps", "category": "Cloud & Databases", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" },
-      { "name": "Kubernetes", "experience": "Project-based", "context": "Pod deployment, clusters", "category": "Cloud & Databases", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" },
-      { "name": "Docker", "experience": "2+ years", "context": "Containerization", "category": "Cloud & Databases", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
-      { "name": "MongoDB", "experience": "2+ year", "context": "NoSQL databases", "category": "Cloud & Databases", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
-      { "name": "Redis", "experience": "1+ year", "context": "Caching, sessions", "category": "Cloud & Databases", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" },
-      { "name": "Linux Systems", "experience": "1+ years", "context": "Terminal commands, system administration", "category": "Cloud & Databases", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" }
+    "apis_frameworks": [
+      {
+        "name": "FastAPI",
+        "context": "High-performance APIs",
+        "category": "APIs & Frameworks",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg"
+      },
+      {
+        "name": "Flask",
+        "context": "Lightweight APIs",
+        "category": "APIs & Frameworks",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"
+      },
+      {
+        "name": "Streamlit",
+        "context": "ML dashboards, demos",
+        "category": "APIs & Frameworks",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/streamlit/streamlit-original.svg"
+      },
+      {
+        "name": "Pydantic",
+        "context": "Data validation, schemas",
+        "category": "APIs & Frameworks",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+      },
+      {
+        "name": "Next.js",
+        "context": "SSG/SSR applications",
+        "category": "APIs & Frameworks",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+      },
+      {
+        "name": "React.js",
+        "context": "SPAs, component-based UI",
+        "category": "APIs & Frameworks",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+      }
+    ],
+    "mlops_cloud_data": [
+      {
+        "name": "Docker",
+        "context": "Containerization",
+        "category": "MLOps, Cloud & Data",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+      },
+      {
+        "name": "Kubernetes",
+        "context": "Container orchestration, clusters",
+        "category": "MLOps, Cloud & Data",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg"
+      },
+      {
+        "name": "GitHub Actions",
+        "context": "CI/CD pipelines, automation",
+        "category": "MLOps, Cloud & Data",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+      },
+      {
+        "name": "GCP",
+        "context": "Google Cloud Platform",
+        "category": "MLOps, Cloud & Data",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg"
+      },
+      {
+        "name": "Microsoft Azure",
+        "context": "Cloud deployment, Logic Apps",
+        "category": "MLOps, Cloud & Data",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg"
+      },
+      {
+        "name": "AWS",
+        "context": "Cloud services, deployment",
+        "category": "MLOps, Cloud & Data",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+      },
+      {
+        "name": "MongoDB",
+        "context": "NoSQL databases",
+        "category": "MLOps, Cloud & Data",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+      },
+      {
+        "name": "PostgreSQL",
+        "context": "Relational database",
+        "category": "MLOps, Cloud & Data",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+      },
+      {
+        "name": "Redis",
+        "context": "Caching, vector store",
+        "category": "MLOps, Cloud & Data",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg"
+      },
+      {
+        "name": "SQLite",
+        "context": "Lightweight storage, metrics",
+        "category": "MLOps, Cloud & Data",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg"
+      },
+      {
+        "name": "SQL",
+        "context": "Database queries, analytics",
+        "category": "MLOps, Cloud & Data",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+      },
+      {
+        "name": "Pandas",
+        "context": "Data manipulation, EDA",
+        "category": "MLOps, Cloud & Data",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg"
+      },
+      {
+        "name": "NumPy",
+        "context": "Numerical computing",
+        "category": "MLOps, Cloud & Data",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg"
+      },
+      {
+        "name": "Tableau",
+        "context": "BI dashboards, data visualization",
+        "category": "MLOps, Cloud & Data",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tableau/tableau-original.svg"
+      },
+      {
+        "name": "Power BI",
+        "context": "Business intelligence, reporting",
+        "category": "MLOps, Cloud & Data",
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg"
+      }
     ]
   },
   "experience": [
     {
       "id": 1,
-      "title": "Associate Software Engineer",
-      "company": "Lowe's Companies, Inc.",
-      "location": "Bangalore, India",
-      "logo": "/professional-experience-logos/lowes.png",
-      "duration": "Jul 2024 – Present",
-      "description": "Dual-focused role enhancing reusable MicroFrontend (MFE) applications delivering scalable updates via CDN while spearheading AI-driven automation initiatives. Collaborated across teams for seamless e-commerce integration from PLP to checkout, serving millions of users, and led cutting-edge AI solutions for vulnerability resolution, code generation, and team productivity enhancement.",
+      "title": "Artificial Intelligence Intern",
+      "company": "Aroma Brand Solutions",
+      "location": "Pune, India",
+      "logo": "/professional-experience-logos/aroma.png",
+      "duration": "June 2025 \u2013 Nov 2025",
+      "description": "Worked on data-driven marketing analytics and ML-driven digital strategy initiatives. Applied data preprocessing, feature engineering, and exploratory data analysis on marketing and user engagement datasets to surface actionable insights.",
       "achievements": [
-        "Enhanced MicroFrontend architecture delivering rapid, scalable updates to millions of users",
-        "Championed AI-driven automation for vulnerability resolution and intelligent code generation",
-        "Developed internal automation tools boosting team efficiency using Python, FastAPI, and AI SDKs",
-        "Led cross-team collaboration for seamless e-commerce integration from PLP to checkout",
-        "Implemented AI solutions using Langchain, Google ADK, OpenAI, and HuggingFace technologies"
+        "Performed data preprocessing, feature engineering, and EDA on marketing and user engagement datasets using Pandas",
+        "Surfaced data-driven insights that informed branding and campaign strategies",
+        "Collaborated with marketing, design, and web teams to apply ML-driven analytics to digital content strategy",
+        "Contributed to data pipeline development for automated reporting workflows"
       ],
-      "technologies": ["Python", "FastAPI", "Google ADK", "OpenAI SDK", "Langchain", "HuggingFace", "MCP", "React.js", "Redux", "Figma", "Docker", "Node.js"]
-    },
-    {
-      "id": 2,
-      "title": "Software Engineer Intern",
-      "company": "Zebra Technologies",
-      "location": "Bangalore, India",
-      "logo": "/professional-experience-logos/zebra.png",
-      "duration": "Jan 2024 – Jun 2024",
-      "description": "Deployed pods and services in Kubernetes clusters with L7 load balancing. Developed prototypes showcasing SingleStore as vector store utilizing RAG with Langchain.",
-      "achievements": [
-        "Designed Logic apps for application secrets expiry notification",
-        "Implemented Retrieval Augmented Generation solutions",
-        "Managed cloud infrastructure and container orchestration"
-      ],
-      "technologies": ["Microsoft Azure", "SingleStore", "Langchain", "SQL", "Docker", "Linux", "Terraform", "Kubernetes"]
-    },
-    {
-      "id": 3,
-      "title": "Project Intern",
-      "company": "Volvo Group",
-      "location": "Bangalore, India",
-      "logo": "/professional-experience-logos/volvo.png",
-      "duration": "Aug 2022 – Nov 2022",
-      "description": "Developed innovative Faceless Recruitment System featuring bias-free hiring through anonymous candidate evaluation. Built full-stack application with secure authentication and automated screening workflows. Led intern team through complete development cycle and pitched solution to HR leadership.",
-      "achievements": [
-        "Built complete recruitment platform with Azure MySQL Database and Nodejs Backend",
-        "Deployed application using Heroku and Docker",
-        "Led cross-functional team of interns to project success"
-      ],
-      "technologies": ["Node.js", "EJS", "Figma", "SQL", "Azure", "Heroku"]
+      "technologies": [
+        "Python",
+        "Pandas",
+        "NumPy",
+        "EDA",
+        "Feature Engineering",
+        "Machine Learning"
+      ]
     }
   ],
   "education": {
-    "degree": "BE in Information Science Engineering",
-    "institution": "Ramaiah Institute of Technology",
-    "duration": "Nov 2020 – Jun 2024",
-    "cgpa": "9.54/10.0",
-    "location": "Bangalore, India"
+    "degree": "B.E. \u2013 Artificial Intelligence & Machine Learning",
+    "institution": "PES's Modern College of Engineering, Pune",
+    "university": "Savitribai Phule Pune University",
+    "duration": "Nov 2022 \u2013 June 2026",
+    "cgpa": "8.0",
+    "location": "Pune, India",
+    "coursework": [
+      "Machine Learning",
+      "Deep Learning",
+      "NLP",
+      "Data Structures & Algorithms",
+      "Computer Vision",
+      "Probability & Statistics"
+    ]
   },
   "projects": [
     {
       "id": 1,
-      "title": "Foresight",
-      "subtitle": "AI Accessibility Accelerator",
-      "description": "Open-source accessibility accelerator for visually impaired individuals utilizing ShareGPT4V, Detectron2, and Gemma 7B models. Improved visual comprehension by 11% over base model with voice-controlled navigation.",
-      "longDescription": "Research project under Unisys & Ramaiah Institute of Technology focusing on multimodal generative AI for accessibility. Combines LLAVA-1.5, Gemma 7B, and Detectron2 for reduced hallucinations and enhanced object recognition.",
-      "technologies": ["ShareGPT4V", "Detectron2", "Gemma 7B", "OpenAI Whisper", "Python", "AI/ML"],
-      "github": "https://github.com/Shades-en/Foresight",
+      "title": "Code Narrator",
+      "subtitle": "Autonomous Documentation & Video Synthesis System",
+      "description": "An AI-powered system that automatically transforms GitHub repositories into comprehensive video tutorials with chapter-by-chapter markdown documentation and fully narrated MP4 videos \u2014 no manual intervention required.",
+      "longDescription": "CodeNarrator uses a dual-pipeline agentic architecture (PocketFlow AsyncFlow + Sync Flow) to convert any GitHub repository into structured Markdown tutorials and narrated 1920\u00d71080 MP4 videos. Integrates Google Gemini 2.5 Flash with multi-provider LLM failover, prompt caching, and YAML validation. Features a FastAPI backend with real-time job tracking and a Next.js frontend with live chapter counters, video playback controls, and multi-language support (English, Hindi, Spanish, French). Supports three voice styles and three visual themes.",
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "Next.js",
+        "Google Gemini",
+        "PocketFlow",
+        "Playwright",
+        "MoviePy",
+        "edge-tts",
+        "Mermaid.js",
+        "Docker"
+      ],
+      "github": "https://github.com/PrathamPatil17/CodeNarrator",
       "featured": true,
-      "categories": ["AI/ML", "Computer Vision", "Natural Language Processing"],
-      "image": "https://i.postimg.cc/bYkBPsQD/foresight.png",
-      "status": "Published Research",
+      "categories": [
+        "Generative AI",
+        "Agentic Systems",
+        "Full Stack"
+      ],
+      "image": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=800&auto=format&fit=crop",
+      "status": "Completed",
       "priority": 1
     },
     {
       "id": 2,
-      "title": "PasswordlessAuth",
-      "subtitle": "Identity Provider SDK",
-      "description": "Identity Provider SDK enabling passwordless authentication through facial verification, voice recognition, NFC, ECG, QR codes, and FIDO authentication. Combines 5 authentication methods with SSO.",
-      "longDescription": "Research project providing comprehensive passwordless authentication solutions for web and mobile applications. Implements Facenet for facial verification, Resemblyzer for voice recognition, and WebAuthn API for FIDO authentication.",
-      "technologies": ["Facenet", "Resemblyzer", "WebAuthn API", "Siamese Neural Networks", "NFC", "Bluetooth"],
-      "github": "https://github.com/Shades-en/PasswordlessAuth",
+      "title": "RetrieveX",
+      "subtitle": "LLM-Powered Intelligent Query Retrieval System",
+      "description": "A production-ready RAG system that processes large PDF documents and delivers intelligent, contextual answers for insurance, legal, HR, and compliance use cases using semantic search and GPT-4.",
+      "longDescription": "Processes large documents through a pipeline of PDF text extraction, normalization, and vector embedding generation stored in Pinecone. Uses Maximal Marginal Relevance (MMR) reranking for precise semantic search, then generates answers via GPT-4 with context attribution. Includes Bearer token authentication, embedding caching for performance optimization, and a RESTful API with structured JSON responses. Deployed with Docker.",
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "OpenAI GPT-4",
+        "Pinecone",
+        "PyMuPDF",
+        "NLTK",
+        "Scikit-learn",
+        "Docker"
+      ],
+      "github": "https://github.com/PrathamPatil17/LLM_Powered_Intelligent_Query_Retrieval_System",
       "featured": true,
-      "categories": ["Security", "AI/ML", "Computer Vision", "Audio Processing"],
-      "image": "https://i.postimg.cc/D0Ph4ms6/passwordless-Auth.png",
-      "status": "Open Source",
+      "categories": [
+        "RAG",
+        "Generative AI",
+        "Backend"
+      ],
+      "image": "https://images.unsplash.com/photo-1555952517-2e8e729e0b44?w=800&auto=format&fit=crop",
+      "status": "Completed",
       "priority": 2
     },
     {
       "id": 3,
-      "title": "Memoirs",
-      "subtitle": "Mental Health Platform",
-      "description": "Mental health surveillance and assessment platform for teens and students. Features personalized music recommendations with Solfeggio frequencies and AI-powered mental health assistance.",
-      "longDescription": "Comprehensive mental health platform analyzing journal entries to provide personalized support. Integrates specific brain-targeting frequencies and AI-driven goal generation for depression support.",
-      "technologies": ["Python", "AI/ML", "Natural Language Processing"],
-      "github": "https://github.com/Shades-en/MindMap",
-      "featured": false,
-      "categories": ["Healthcare", "AI/ML", "Audio Processing", "Natural Language Processing"],
-      "image": "https://i.postimg.cc/nz8NK74x/image.png",
-      "status": "Active Development",
+      "title": "YouTube Q&A",
+      "subtitle": "RAG-Based Video Intelligence System",
+      "description": "A RAG pipeline that transcribes YouTube audio via Whisper, indexes timestamped chunks into ChromaDB, and answers natural language queries with exact video moment citations.",
+      "longDescription": "Built with LangChain and ChromaDB, this system transcribes YouTube videos using OpenAI Whisper and indexes timestamped chunks for semantic retrieval. Achieved 89% faithfulness and 84% context recall on a 20-question RAGAS benchmark via chunk tuning (1000 \u2192 512 tokens). Reduced API cost ~60% through session-level vector store caching with video ID deduplication. Implements conversational memory via LangChain ConversationalRetrievalChain with async RAGAS scoring post-response to avoid latency overhead. Deployed on Streamlit Cloud.",
+      "technologies": [
+        "Python",
+        "LangChain",
+        "ChromaDB",
+        "OpenAI Whisper",
+        "GPT-4o-mini",
+        "RAGAS",
+        "Streamlit"
+      ],
+      "github": "",
+      "featured": true,
+      "categories": [
+        "RAG",
+        "Generative AI",
+        "Eval & Observability"
+      ],
+      "image": "https://images.unsplash.com/photo-1611162616475-46b635cb6868?w=800&auto=format&fit=crop",
+      "status": "Completed",
       "priority": 3
     },
     {
       "id": 4,
-      "title": "StudentBuzz",
-      "subtitle": "Student Collaboration Platform",
-      "description": "A collaborative platform that empowers students to showcase their skills, projects, and accomplishments while fostering a vibrant community of learning and collaboration.",
-      "longDescription": "Full-stack platform enabling students to create comprehensive profiles highlighting skills and achievements, join clubs, collaborate across colleges, and share educational resources. Features inter-college collaboration, club activities, and notification systems.",
-      "technologies": ["React.js", "Node.js", "Express", "MongoDB", "Firebase"],
-      "github": "https://github.com/Shades-en/studentbuzz",
-      "featured": false,
-      "categories": ["Fullstack Development", "Social Platform"],
-      "image": "https://i.postimg.cc/pLpSgkkx/image.png",
+      "title": "AI Performance Monitor",
+      "subtitle": "LLM Observability & CI/CD Evaluation Pipeline",
+      "description": "A production LLM observability system that captures 9 metrics per query \u2014 latency, token usage, cost, faithfulness, context recall, quality drift \u2014 with automated CI/CD evaluation via GitHub Actions.",
+      "longDescription": "Engineered a FastAPI middleware that captures 9 metrics per query (latency, token usage, cost, faithfulness, context recall, quality drift) and persists them to SQLite, with Langfuse for per-call tracing. Pinpointed retrieval bottlenecks through p95 latency analysis, cutting mean response latency 32% via chunk optimisation (average query cost $0.0023). Automated a GitHub Actions + MLflow eval pipeline that runs RAGAS on every push to main and fails the build if faithfulness drops below 0.75. Streamlit dashboard with Slack webhook alerts on quality drift.",
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "Langfuse",
+        "RAGAS",
+        "MLflow",
+        "GitHub Actions",
+        "Docker",
+        "Streamlit",
+        "SQLite"
+      ],
+      "github": "",
+      "featured": true,
+      "categories": [
+        "Eval & Observability",
+        "MLOps",
+        "Generative AI"
+      ],
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop",
       "status": "Completed",
-      "priority": 6
+      "priority": 4
     },
     {
       "id": 5,
-      "title": "Promonade",
-      "subtitle": "Promotions Management UI",
-      "description": "Full-stack application for Promonade promotions management system built with modern React and Spring boot technologies and beautiful UI components.",
-      "longDescription": "Modern React frontend for promotions management featuring responsive design with Tailwind CSS, interactive charts with Recharts, and comprehensive UI components using Shadcn. Integrates with backend promotions management system.",
-      "technologies": ["React.js", "Spring Boot", "Java", "PostgreSQL", "Tailwind CSS", "Shadcn", "Lucide Icons", "Recharts"],
-      "github": "https://github.com/Shades-en/promonade-ui",
+      "title": "MCQ Generator",
+      "subtitle": "AI-Powered Multiple Choice Question Generator",
+      "description": "An AI-powered web application that automatically generates multiple-choice questions from uploaded documents (.pdf, .docx, .txt), designed to assist educators and exam creators.",
+      "longDescription": "Built with LangChain and OpenAI GPT-4, this app accepts document uploads in PDF, DOCX, or TXT formats and generates customizable MCQs through a four-stage workflow: file upload, text extraction, LLM-based question generation, and results display with export options. Users can set the number of questions and export results in .txt or .pdf format. Containerized with Docker for easy deployment.",
+      "technologies": [
+        "Python",
+        "LangChain",
+        "OpenAI GPT-4",
+        "Flask",
+        "pdfplumber",
+        "python-docx",
+        "FPDF",
+        "Docker"
+      ],
+      "github": "https://github.com/PrathamPatil17/MCQ-Generator-using-LLM",
       "featured": false,
-      "categories": ["Fullstack Development", "Enterprise"],
-      "image": "https://i.postimg.cc/3JByPFNL/image.png",
-      "status": "Completed",
-      "priority": 8
-    },
-    {
-      "id": 6,
-      "title": "Car Theft Detection System",
-      "subtitle": "Automated Parking Security",
-      "description": "Automated vehicle theft detection system for parking facilities using computer vision and barcode scanning technology.",
-      "longDescription": "Python-based security system that detects vehicle theft in real-time using moving object detection, Frame differencing techniques and barcode scanning for parking entry validation. Notifies security personnel about unauthorized vehicle movements with automated monitoring.",
-      "technologies": ["Python", "OpenCV", "Computer Vision", "Digital Image Processing"],
-      "github": "https://github.com/Shades-en/Car-theft-detection-Parking",
-      "featured": false,
-      "categories": ["AI/ML", "Security", "Computer Vision"],
-      "image": "https://i.postimg.cc/SKKtWd2H/image.png",
+      "categories": [
+        "Generative AI",
+        "Full Stack"
+      ],
+      "image": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&auto=format&fit=crop",
       "status": "Completed",
       "priority": 5
     },
     {
-      "id": 7,
-      "title": "Bubble Bop",
-      "subtitle": "QR-Based Restaurant Management",
-      "description": "Hotel management system that takes orders for each table based on scanning QR codes available at tables, streamlining the dining experience.",
-      "longDescription": "Django-based restaurant management system featuring QR code table ordering, MongoDB integration, email notifications, and comprehensive order management. Includes both customer-facing ordering interface and restaurant management dashboard.",
-      "technologies": ["Python", "Django", "MongoDB", "HTML", "CSS", "JavaScript"],
-      "github": "https://github.com/Shades-en/Bubble-Bop-Food-Dine-In",
+      "id": 6,
+      "title": "Walmart Data Analysis",
+      "subtitle": "SQL + Python End-to-End Data Analytics Project",
+      "description": "An end-to-end data analysis solution that extracts critical business insights from Walmart sales data through Python processing, SQL querying, and structured problem-solving methodologies.",
+      "longDescription": "Complete analytical workflow covering environment setup, data acquisition via Kaggle API, cleaning and validation, feature engineering (transaction totals), and loading into MySQL and PostgreSQL. Complex SQL queries address business questions around sales trends, profitability, and customer behaviour patterns. Built with pandas, numpy, and sqlalchemy for the data pipeline layer.",
+      "technologies": [
+        "Python",
+        "SQL",
+        "MySQL",
+        "PostgreSQL",
+        "Pandas",
+        "NumPy",
+        "SQLAlchemy",
+        "Jupyter Notebooks"
+      ],
+      "github": "https://github.com/PrathamPatil17/Walmart-SQL-Project",
       "featured": false,
-      "categories": ["Fullstack Development", "Restaurant Tech"],
-      "image": "https://i.postimg.cc/fWPqYYDr/image.png",
+      "categories": [
+        "Data Analytics",
+        "SQL"
+      ],
+      "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop",
       "status": "Completed",
-      "priority": 9
+      "priority": 6
     },
     {
-      "id": 8,
-      "title": "Myxable",
-      "subtitle": "File Conversion Platform",
-      "description": "Open-source multiformat bulk file conversion platform that won 2nd place at Reva Hack 2021 hackathon.",
-      "longDescription": "Django-based file conversion platform supporting multiple file formats with bulk processing capabilities. Features user-friendly interface for seamless file format conversions, developed as part of hackathon competition.",
-      "technologies": ["Python", "Django", "File Processing", "Web Development"],
-      "github": "https://github.com/Shades-en/myxable",
+      "id": 7,
+      "title": "HR Analytics Dashboard",
+      "subtitle": "Business Intelligence Dashboard",
+      "description": "An interactive Tableau dashboard designed to transform raw HR data into actionable insights on employee attrition, performance, and workforce trends.",
+      "longDescription": "Built an end-to-end business intelligence solution that cleans and transforms raw HR datasets into a rich interactive Tableau dashboard. Surfaces key workforce metrics including employee attrition rates, performance distributions, department-level headcount trends, and demographic breakdowns. Designed for HR managers and business leaders to drill down into specific segments and make data-driven decisions around retention and talent strategy.",
+      "technologies": [
+        "Tableau",
+        "Data Analysis",
+        "Data Cleaning",
+        "Business Intelligence"
+      ],
+      "github": "https://public.tableau.com/app/profile/pratham.patil5242/viz/HRDashboard_17347780267140/HRSummary",
       "featured": false,
-      "categories": ["Fullstack Development", "Utility"],
-      "image": "https://i.postimg.cc/j2hVS5Jb/image.png",
+      "categories": [
+        "Data Analytics",
+        "Business Intelligence"
+      ],
+      "image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&auto=format&fit=crop",
       "status": "Completed",
       "priority": 7
-    },
-    {
-      "id": 9,
-      "title": "Valunique",
-      "subtitle": "Faceless Recruitment System",
-      "description": "Innovative recruitment platform eliminating bias through faceless hiring processes, developed during Volvo Group internship.",
-      "longDescription": "Node.js-based recruitment system designed to reduce hiring bias by focusing on skills and qualifications rather than personal attributes. Features comprehensive candidate evaluation, MySQL database integration, and EJS templating for dynamic content rendering.",
-      "technologies": ["Node.js", "Express", "MySQL", "Sequelize", "EJS", "HTML", "CSS"],
-      "github": "https://github.com/Shades-en/Valunique",
-      "featured": false,
-      "categories": ["Fullstack Development", "HR Tech", "Enterprise"],
-      "image": "https://i.postimg.cc/SRjy3CvP/image.png",
-      "status": "Completed",
-      "priority": 4
     }
   ],
   "publications": [
     {
-      "title": "Foresight: Empowering Visually Impaired Individuals through Multimodal Generative AI",
-      "venue": "IEEE",
-      "status": "Awaiting Publication",
-      "date": "Jun 2025",
-      "description": "Research on multimodal AI systems for accessibility enhancement",
+      "title": "Code Narrator: An Autonomous Agentic Framework for Multi-Modal Software Documentation and Video Tutorial Synthesis",
+      "venue": "International Journal of Computer Applications",
+      "status": "Awaiting Approval",
+      "date": "Jun 2026",
+      "url": "",
+      "description": "Research paper presenting an autonomous agentic framework that converts GitHub repositories into structured multi-modal documentation and narrated video tutorials using LLMs and agentic pipelines.",
       "category": "research"
-    },
-    {
-      "title": "AuthEZ: A Multifaceted Identity Provider Service using Facial, Voice, and In-App Authentication",
-      "venue": "IEEE",
-      "doi": "10.1109/GCAT62922.2024.10923933",
-      "url": "https://doi.org/10.1109/GCAT62922.2024.10923933",
-      "date": "Oct 2024",
-      "description": "Comprehensive study on passwordless authentication methodologies",
-      "category": "research"
-    },
-    {
-      "title": "I Vibecoded My Web Portfolio with AI — A 2025 Experiment",
-      "venue": "Medium",
-      "url": "https://medium.com/@owaisiqbal2013/i-vibecoded-my-web-portfolio-with-ai-a-2025-experiment-edcfdfc21092",
-      "date": "Jul 2025",
-      "description": "Experiment on using AI to create a web portfolio",
-      "category": "blog"
     }
   ],
-  "achievements": [
-    {
-      "title": "Lowe's Individual Excellence Award",
-      "organization": "Lowe's Companies, Inc.",
-      "year": "2024",
-      "description": "Awarded for bringing the Lowe's core values to life and excelling in actions. Superior sense of ownership and achieving against odds.",
-      "category": "corporate",
-      "url": "https://drive.google.com/file/d/1yrIC9wy2_VlhKVsrggzauwpuI17U6bS4/view?usp=drivesdk&usp=embed_facebook"
-    },
-    {
-      "title": "Lowe's Spot Award",
-      "organization": "Lowe's Companies, Inc.",
-      "year": "2024",
-      "description": "Immediate recognition for taking action at the right time and going all out in getting the job done.",
-      "category": "corporate",
-      "url": "https://drive.google.com/file/d/1u4wFx8khOBt7NiXoSHrRgmUTfEmheq4W/view?usp=drivesdk&usp=embed_facebook"
-    },
-    {
-      "title": "Pradarshana 2024 - 1st Place",
-      "organization": "Ramaiah Institute of Technology",
-      "year": "2024",
-      "description": "First place at Final Year innovation exhibition for Foresight project",
-      "category": "competitive",
-      "url": "https://drive.google.com/file/d/1PRPSAcT3uvEDA2iZMDprFA1Jv5zae3yd/view?usp=sharing&usp=embed_facebook"
-    },
-    {
-      "title": "Campus Research Certificate",
-      "organization": "Unisys India",
-      "year": "2024",
-      "description": "Recognition for Foresight: Accessibility Accelerator Using Multimodal Generative AI",
-      "category": "academic",
-      "url": "https://drive.google.com/file/d/1ovpyEYgLy3r6h-vEP-QZK_MA9NcHFGBH/view?usp=drivesdk&usp=embed_facebook"
-    },
-    { 
-      "title": "Reva Hack 2021 - 2nd Place",
-      "organization": "Reva University",
-      "year": "2021",
-      "description": "Second place for Myxable, an open-source multiformat bulk file conversion platform",
-      "category": "competitive",
-      "url": "https://drive.google.com/file/d/1qvHmLXbMzdKqenyvgwg7bVSxq9u_MIQj/view?usp=sharing&usp=embed_facebook"
-    }
-  ],
+  "achievements": [],
   "certifications": [
     {
       "id": 1,
-      "title": "Deep Learning Specialization",
-      "provider": "Coursera",
+      "title": "SQL for Data Analysis",
+      "provider": "LinkedIn Learning",
       "year": "2023",
-      "description": "Comprehensive deep learning specialization covering neural networks, optimization, and advanced architectures",
+      "description": "Comprehensive SQL training covering data querying, aggregation, and analytical techniques for data analysis workflows.",
       "certificates": [
         {
-          "url": "https://coursera.org/verify/JXGWAGQ34VTY",
-          "title": "Advanced Learning Algorithms",
-          "year": "2022",
-          "credentialId": "JXGWAGQ34VTY"
-        },
-        {
-          "url": "https://coursera.org/verify/FCSKKCABZXJR",
-          "title": "Sequence Models",
+          "url": "https://www.linkedin.com/learning/certificates/456f31fa9bc0cddc07b3a7e93716097b418efc24048ae58c47d2b0fe0db49327",
+          "title": "SQL for Data Analysis",
           "year": "2023",
-          "credentialId": "FCSKKCABZXJR"
-        },
-        {
-          "url": "https://coursera.org/verify/9SWQRKTMS85Y",
-          "title": "Convolutional Neural Networks",
-          "year": "2023",
-          "credentialId": "9SWQRKTMS85Y"
-        },
-        {
-          "url": "https://www.coursera.org/account/accomplishments/verify/RNJFP74S7RYF",
-          "title": "Supervised Machine Learning: Regression and Classification",
-          "year": "2022",
-          "credentialId": "RNJFP74S7RYF"
+          "credentialId": "456f31fa9bc0cddc07b3a7e93716097b418efc24048ae58c47d2b0fe0db49327"
         }
       ],
-      "skills": ["Neural Networks", "Computer Vision", "Natural Language Processing", "Convolutional Neural Networks", "TensorFlow", "Supervised Learning", "Unsupervised Learning"]
+      "skills": [
+        "SQL",
+        "Data Analysis",
+        "Database Querying",
+        "Data Aggregation"
+      ]
     },
     {
       "id": 2,
-      "title": "Microsoft Azure Fundamentals",
-      "provider": "Coursera",
+      "title": "Microsoft AI Skills Challenge",
+      "provider": "Microsoft",
       "year": "2024",
-      "description": "Azure cloud services, architecture, and deployment strategies for enterprise applications",
+      "description": "Microsoft AI Skills Challenge covering AI fundamentals, Azure AI services, and practical implementation of AI solutions.",
       "certificates": [
         {
-          "url": "https://www.coursera.org/account/accomplishments/verify/9ZXJV8ATL52V",
-          "title": "Microsoft Azure Management Tools and Security Solutions",
+          "url": "https://drive.google.com/file/d/1LQ-nfdnLS_BLoss3udq-EpKmfG4nNbET/view",
+          "title": "Microsoft AI Skills Challenge",
           "year": "2024",
-          "credentialId": "9ZXJV8ATL52V"
-        },
-        {
-          "url": "https://www.coursera.org/account/accomplishments/verify/HZMYP7MHNL4X",
-          "title": "Microsoft Azure Services and Lifecycles",
-          "year": "2024",
-          "credentialId": "HZMYP7MHNL4X"
-        },
-        {
-          "url": "https://www.coursera.org/account/accomplishments/verify/X85NDRLLFGD2",
-          "title": "Introduction to Microsoft Azure Cloud Services",
-          "year": "2024",
-          "credentialId": "X85NDRLLFGD2"
+          "credentialId": ""
         }
       ],
-      "skills": ["Cloud Computing", "Azure Services", "Cloud Architecture", "DevOps"]
+      "skills": [
+        "Artificial Intelligence",
+        "Azure AI",
+        "Machine Learning",
+        "Microsoft Azure"
+      ]
     },
     {
       "id": 3,
-      "title": "Kubernetes Fundamentals",
-      "provider": "LinkedIn Learning",
-      "year": "2024",
+      "title": "Google Cloud Computing Foundations Badge",
+      "provider": "Google Cloud",
+      "year": "2023",
+      "description": "Google Cloud Computing Foundations covering core cloud concepts, GCP services, and cloud infrastructure fundamentals.",
       "certificates": [
         {
-          "url": "https://drive.google.com/drive/u/1/folders/1dr8EfTztRF8BeTUbG6rtpocDs5RvCgpH",
-          "title": "Kubernetes Fundamentals",
-          "year": "2024",
-          "credentialId": "73e74bbff766d825612bbc361791644140c59fed0eb11c811275ff4ca9969689"
+          "url": "https://www.skills.google/public_profiles/3feb2503-2c69-4f98-8f86-30d02d38a3ec/badges/5860602",
+          "title": "Google Cloud Computing Foundations",
+          "year": "2023",
+          "credentialId": "5860602"
         }
       ],
-      "description": "Container orchestration, cluster management, and cloud-native application deployment",
-      "skills": ["Container Orchestration", "DevOps", "Cloud Native", "Microservices"]
+      "skills": [
+        "Google Cloud Platform",
+        "Cloud Computing",
+        "Cloud Infrastructure",
+        "GCP"
+      ]
     }
   ],
   "seo": {
-    "title": "Owais Iqbal - Generative AI Engineer & Full-Stack Developer",
-    "description": "Associate Software Engineer at Lowe's specializing in AI-driven automation, Full-Stack development and accessibility technology. Expert in Python, React.js, and cloud technologies.",
-    "keywords": ["Owais Iqbal", "AI Engineer", "Full Stack Developer", "Python", "React", "Machine Learning", "Accessibility Technology", "Lowe's", "Software Engineer", "Bangalore", "Generative AI", "Ramaiah Institute of Technology", "Zebra Technologies", "Unisys", "Presidency", "lowes"],
-    "ogImage": "/owais-profile2.png",
-    "googleSiteVerification": "oNrOrBYC8Dz7PNuaUMPlYXCVWaPbmLofyH5Q9EoXg50",
+    "title": "Pratham Patil \u2013 Generative AI Engineer | RAG Pipelines & Agentic Systems",
+    "description": "AI & ML engineering graduate specializing in Generative AI \u2014 building end-to-end LLM systems, RAG pipelines, agentic workflows, and production observability stacks with LangChain, FastAPI, and ChromaDB.",
+    "keywords": [
+      "Pratham Patil",
+      "Generative AI Engineer",
+      "RAG Pipelines",
+      "LLM Integration",
+      "Agentic Systems",
+      "LangChain",
+      "LangGraph",
+      "ChromaDB",
+      "FastAPI",
+      "Python",
+      "AI Engineer",
+      "Pune",
+      "Machine Learning",
+      "OpenAI",
+      "Vector Databases",
+      "RAGAS",
+      "MLOps",
+      "Prompt Engineering"
+    ],
+    "ogImage": "/pratham-profile.png",
+    "googleSiteVerification": "",
     "icon": {
       "icon": "/web-app-manifest.png",
       "appleTouchIcon": "/apple-touch-icon.png"
-    }
+    },
+    "ogAlt": "Pratham Patil \u2013 Generative AI Engineer | RAG Pipelines & Agentic Systems"
   }
 }

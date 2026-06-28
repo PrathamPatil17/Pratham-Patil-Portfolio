@@ -1,132 +1,118 @@
-# 🚀 Owais Iqbal - Professional Portfolio
+# Pratham Patil - Portfolio
 
-> A modern, fully-responsive portfolio showcasing AI/ML engineering expertise and full-stack development skills with a cyberpunk aesthetic.
+> A modern, fully-responsive portfolio showcasing Generative AI engineering expertise, ML systems, and software development skills.
 
-## ✨ Overview
+**Live:** [prathampatil.me](https://prathampatil.me)
 
-This portfolio represents a comprehensive showcase of professional experience, technical skills, and innovative projects in AI/ML engineering and full-stack development. Built with modern web technologies and featuring a unique cyberpunk design aesthetic.
+## Overview
 
-## 🎯 Key Features
+This portfolio is a comprehensive showcase of professional experience, technical skills, and projects in Generative AI, RAG pipelines, agentic systems, data analytics, and software development. Built with Next.js 15 and featuring a clean dark design with smooth animations.
 
-### 🏗️ **Modular Architecture**
-- **11 major components** fully modularized with dedicated folder structures
-- **45+ focused sub-components** with single responsibilities
-- **Clean separation of concerns** for exceptional maintainability
-- **Server-side rendering** optimized for SEO and performance
+## Sections
 
-### 🎨 **Design & UX**
-- **Cyberpunk aesthetic** with neon gradients and glass morphism
-- **Fully responsive** design optimized for all devices
-- **Smooth animations** and interactive hover effects
-- **Dark theme** with professional color palette
+- **Hero** — Name, tagline, bio, social links, resume download
+- **About** — My journey, how I work principles, education
+- **Skills** — 6 categories covering 45+ technologies
+- **Experience** — Professional experience with timeline
+- **Projects** — 7 real-world AI/ML and data projects
+- **Publications** — Research papers
+- **Certifications** — Professional certifications
+- **Contact** — Functional contact form with email integration
 
-### ⚡ **Performance & SEO**
-- **Static Site Generation (SSG)** for optimal loading speeds
-- **Server Components** for reduced JavaScript bundle size
-- **SEO optimized** with proper meta tags and structured data
-- **Progressive enhancement** - works without JavaScript
+## Tech Stack
 
-### 📧 **Interactive Features**
-- **Functional contact form** with email integration via Resend
-- **Smooth scroll navigation** with active section highlighting
-- **Mobile-first responsive** design with optimized layouts
-- **Toast notifications** for user feedback
+- **Next.js 15** — React framework with App Router & Server Components
+- **TypeScript** — Type safety
+- **Tailwind CSS** — Utility-first styling
+- **Shadcn UI** — Component library
+- **Resend** — Contact form email service
+- **Lucide React** — Icons
 
-## 🛠️ Tech Stack
-
-### **Core Technologies**
-- **Next.js 15** - React framework with App Router
-- **React 18** - UI library with Server Components
-- **TypeScript** - Type safety and developer experience
-- **Tailwind CSS** - Utility-first CSS framework
-
-### **UI & Components**
-- **Shadcn UI** - Modern component library
-- **Lucide React** - Beautiful icon library
-- **Radix UI** - Accessible component primitives
-- **React Hook Form** - Form handling and validation
-
-### **Data & State Management**
-- **TanStack Query** - Server state management
-- **Zod** - Schema validation
-- **React Context** - Client state management
-
-### **Backend Integration**
-- **Next.js Server Actions** - Server-side form handling
-- **Resend** - Email service integration
-- **JSON data management** - Structured content storage
-
-## 📁 Project Structure
-
-```
-src/
-├── app/                    # Next.js App Router
-│   ├── layout.tsx         # Root layout
-│   ├── page.tsx           # Homepage
-│   ├── not-found.tsx      # Custom 404 page
-│   └── error.tsx          # Error boundary
-├── components/            # Modular component architecture
-│   ├── navigation/        # Navigation components
-│   ├── hero/             # Hero section components
-│   ├── about/            # About section components
-│   ├── skills/           # Skills section components
-│   ├── experience/       # Experience section components
-│   ├── projects/         # Projects section components
-│   ├── publications/     # Publications section components
-│   ├── certifications/   # Certifications section components
-│   ├── awards/           # Awards section components
-│   ├── contact/          # Contact section components
-│   ├── footer/           # Footer section components
-│   └── ui/               # Reusable UI components
-├── data/                 # JSON data files
-├── lib/                  # Utility functions and actions
-└── hooks/                # Custom React hooks
-```
-
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
-- **Node.js 18+** - [Install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-- **Yarn** or **npm** - Package manager
+- Node.js 18+
+- npm
 
 ### Installation
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
-   cd phantom-design-hub
+   git clone https://github.com/PrathamPatil17/portfolio-pratham.git
+   cd portfolio-pratham
    ```
 
 2. **Install dependencies**
    ```bash
-   yarn install
-   # or
    npm install
    ```
 
 3. **Set up environment variables**
    ```bash
-   cp .env.example .env.local
+   touch .env.local
    ```
-   Add your Resend API key for contact form functionality.
+   Add the following to `.env.local`:
+   ```
+   RESEND_API_KEY=your_resend_api_key
+   CONTACT_EMAIL=your_email@gmail.com
+   ```
 
 4. **Start development server**
    ```bash
-   yarn dev
-   # or
    npm run dev
    ```
 
 5. **Open in browser**
    Navigate to [http://localhost:3000](http://localhost:3000)
 
-## 📧 Contact Form Setup
+## Project Structure
 
-The portfolio includes a fully functional contact form. To enable email functionality:
+```
+src/
+├── app/                    # Next.js App Router
+│   ├── layout.tsx          # Root layout & SEO metadata
+│   ├── page.tsx            # Homepage
+│   └── not-found.tsx       # Custom 404 page
+├── components/             # Modular component architecture
+│   ├── navigation/         # Navigation bar
+│   ├── hero/               # Hero section
+│   ├── about/              # About, education, principles
+│   ├── skills/             # Skills by category
+│   ├── experience/         # Work experience timeline
+│   ├── projects/           # Project cards & filters
+│   ├── publications/       # Research papers
+│   ├── certifications/     # Certificates
+│   ├── contact/            # Contact form & info
+│   ├── footer/             # Footer
+│   └── ui/                 # Reusable UI components
+├── data/
+│   └── personal-info.json  # All content — edit this to update the site
+├── lib/
+│   └── actions/contact.ts  # Resend email server action
+└── hooks/                  # Custom React hooks
+```
 
-1. Sign up for [Resend](https://resend.com)
-2. Get your API key
+## Customization
+
+All site content is managed from a single file:
+```
+src/data/personal-info.json
+```
+
+Update your name, bio, skills, projects, experience, certifications, and social links there — the entire site reflects the changes automatically.
+
+## Contact Form
+
+The contact form uses [Resend](https://resend.com) to send emails. On the free plan, emails can only be sent to the account owner's email. To enable:
+
+1. Sign up at [resend.com](https://resend.com)
+2. Create an API key
 3. Add to `.env.local`:
    ```
-   RESEND_API_KEY=your_api_key_here
+   RESEND_API_KEY=re_your_key_here
+   CONTACT_EMAIL=your_email@gmail.com
    ```
+
+## License
+
+MIT

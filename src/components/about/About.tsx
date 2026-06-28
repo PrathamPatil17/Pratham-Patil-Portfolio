@@ -2,7 +2,6 @@ import React from 'react';
 import Education from './Education';
 import MyJourney from './MyJourney';
 import HowIWork from './HowIWork';
-import Stats from './Stats';
 
 const About: React.FC = () => {
   return (
@@ -28,8 +27,6 @@ const About: React.FC = () => {
           <HowIWork />
         </div>
 
-        {/* Stats Section */}
-        <Stats />
       </div>
     </section>
   );

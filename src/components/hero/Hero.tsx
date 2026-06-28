@@ -66,7 +66,7 @@ const Hero: React.FC = () => {
                   href={personalInfo.social.resume}
                   target="_blank"
                   rel="noopener noreferrer"
-                  download="Owais_Iqbal_Resume.pdf"
+                  download="Pratham_Patil_Resume.pdf"
                 >
                   <Download className="mr-2 h-5 w-5 group-hover:animate-bounce" />
                   Download Resume

@@ -1,8 +1,7 @@
 // Server Component - No 'use client' directive for SEO benefits
 import React from 'react';
-import { Code2, Brain, Server, Monitor, Cloud, type LucideIcon } from 'lucide-react';
+import { Code2, Brain, Network, BarChart2, Layers, Cloud, type LucideIcon } from 'lucide-react';
 import SkillCategory from './SkillCategory';
-import SkillsSummary from './SkillsSummary';
 import personalInfo from '@/data/personal-info.json';
 
 interface Skill {
@@ -27,24 +26,29 @@ const Skills: React.FC = () => {
       skills: personalInfo.skills.languages
     },
     {
-      title: 'AI/ML Technologies',
+      title: 'Generative AI & LLMs',
       icon: Brain,
-      skills: personalInfo.skills.ai_ml
+      skills: personalInfo.skills.gen_ai_llms
     },
     {
-      title: 'Backend Development',
-      icon: Server,
-      skills: personalInfo.skills.backend
+      title: 'RAG & Agentic Systems',
+      icon: Network,
+      skills: personalInfo.skills.rag_agentic
     },
     {
-      title: 'Frontend Development',
-      icon: Monitor,
-      skills: personalInfo.skills.frontend
+      title: 'Eval & Observability',
+      icon: BarChart2,
+      skills: personalInfo.skills.eval_observability
     },
     {
-      title: 'Cloud & Databases',
+      title: 'APIs & Frameworks',
+      icon: Layers,
+      skills: personalInfo.skills.apis_frameworks
+    },
+    {
+      title: 'MLOps, Cloud & Data',
       icon: Cloud,
-      skills: personalInfo.skills.cloud_databases
+      skills: personalInfo.skills.mlops_cloud_data
     }
   ];
 
@@ -71,8 +75,6 @@ const Skills: React.FC = () => {
           ))}
         </div>
 
-        {/* Skills Summary */}
-        <SkillsSummary />
       </div>
     </section>
   );
