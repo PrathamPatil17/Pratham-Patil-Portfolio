@@ -7,13 +7,13 @@
     "location": "Pune, India",
     "email": "prathamlpatil04@gmail.com",
     "phone": "+91 9356854392",
-    "tagline": "AI/ML Engineer \u00b7 Software Developer",
-    "bio": "AI & ML engineering graduate specializing in Generative AI \u2014 building end-to-end LLM systems across RAG pipelines, agentic document workflows, and production observability stacks. Proficient with the modern GenAI toolchain: LangChain, LangGraph, ChromaDB, FastAPI and GitHub Actions CI/CD.",
+    "tagline": "AI/ML Engineer · Software Developer",
+    "bio": "AI & ML engineering graduate specializing in Generative AI — building end-to-end LLM systems across RAG pipelines, agentic document workflows, and production observability stacks. Proficient with the modern GenAI toolchain: LangChain, LangGraph, ChromaDB, FastAPI and GitHub Actions CI/CD.",
     "closingBio": "Looking to join a team where shipping real AI products matters more than experimenting in notebooks. Let's build something meaningful together.",
     "story": [
-      "I'm an AI & ML engineering graduate from PES's Modern College of Engineering, Pune, specializing in Generative AI. I build end-to-end LLM systems \u2014 from RAG pipelines and agentic document workflows to production observability stacks.",
+      "I'm an AI & ML engineering graduate from PES's Modern College of Engineering, Pune, specializing in Generative AI. I build end-to-end LLM systems — from RAG pipelines and agentic document workflows to production observability stacks.",
       "My work spans the modern GenAI toolchain: LangChain, LangGraph, ChromaDB, FastAPI, and GitHub Actions CI/CD. I've shipped projects like CodeNarrator, an autonomous documentation and video synthesis system, and a full LLM observability pipeline with RAGAS-based CI/CD evaluation.",
-      "I believe in building AI products that work in production, not just in notebooks. Every project I take on is driven by real-world utility \u2014 measurable performance, clean architecture, and observable systems."
+      "I believe in building AI products that work in production, not just in notebooks. Every project I take on is driven by real-world utility — measurable performance, clean architecture, and observable systems."
     ],
     "profileImage": "/pratham-profile.png"
   },
@@ -362,7 +362,7 @@
       "company": "Aroma Brand Solutions",
       "location": "Pune, India",
       "logo": "/professional-experience-logos/aroma.png",
-      "duration": "June 2025 \u2013 Nov 2025",
+      "duration": "June 2025 – Nov 2025",
       "description": "Worked on data-driven marketing analytics and ML-driven digital strategy initiatives. Applied data preprocessing, feature engineering, and exploratory data analysis on marketing and user engagement datasets to surface actionable insights.",
       "achievements": [
         "Performed data preprocessing, feature engineering, and EDA on marketing and user engagement datasets using Pandas",
@@ -381,10 +381,10 @@
     }
   ],
   "education": {
-    "degree": "B.E. \u2013 Artificial Intelligence & Machine Learning",
+    "degree": "B.E. – Artificial Intelligence & Machine Learning",
     "institution": "PES's Modern College of Engineering, Pune",
     "university": "Savitribai Phule Pune University",
-    "duration": "Nov 2022 \u2013 June 2026",
+    "duration": "Nov 2022 – June 2026",
     "cgpa": "8.0",
     "location": "Pune, India",
     "coursework": [
@@ -401,8 +401,8 @@
       "id": 1,
       "title": "Code Narrator",
       "subtitle": "Autonomous Documentation & Video Synthesis System",
-      "description": "An AI-powered system that automatically transforms GitHub repositories into comprehensive video tutorials with chapter-by-chapter markdown documentation and fully narrated MP4 videos \u2014 no manual intervention required.",
-      "longDescription": "CodeNarrator uses a dual-pipeline agentic architecture (PocketFlow AsyncFlow + Sync Flow) to convert any GitHub repository into structured Markdown tutorials and narrated 1920\u00d71080 MP4 videos. Integrates Google Gemini 2.5 Flash with multi-provider LLM failover, prompt caching, and YAML validation. Features a FastAPI backend with real-time job tracking and a Next.js frontend with live chapter counters, video playback controls, and multi-language support (English, Hindi, Spanish, French). Supports three voice styles and three visual themes.",
+      "description": "An AI-powered system that automatically transforms GitHub repositories into comprehensive video tutorials with chapter-by-chapter markdown documentation and fully narrated MP4 videos — no manual intervention required.",
+      "longDescription": "CodeNarrator uses a dual-pipeline agentic architecture (PocketFlow AsyncFlow + Sync Flow) to convert any GitHub repository into structured Markdown tutorials and narrated 1920×1080 MP4 videos. Integrates Google Gemini 2.5 Flash with multi-provider LLM failover, prompt caching, and YAML validation. Features a FastAPI backend with real-time job tracking and a Next.js frontend with live chapter counters, video playback controls, and multi-language support (English, Hindi, Spanish, French). Supports three voice styles and three visual themes.",
       "technologies": [
         "Python",
         "FastAPI",
@@ -458,7 +458,7 @@
       "title": "YouTube Q&A",
       "subtitle": "RAG-Based Video Intelligence System",
       "description": "A RAG pipeline that transcribes YouTube audio via Whisper, indexes timestamped chunks into ChromaDB, and answers natural language queries with exact video moment citations.",
-      "longDescription": "Built with LangChain and ChromaDB, this system transcribes YouTube videos using OpenAI Whisper and indexes timestamped chunks for semantic retrieval. Achieved 89% faithfulness and 84% context recall on a 20-question RAGAS benchmark via chunk tuning (1000 \u2192 512 tokens). Reduced API cost ~60% through session-level vector store caching with video ID deduplication. Implements conversational memory via LangChain ConversationalRetrievalChain with async RAGAS scoring post-response to avoid latency overhead. Deployed on Streamlit Cloud.",
+      "longDescription": "Built with LangChain and ChromaDB, this system transcribes YouTube videos using OpenAI Whisper and indexes timestamped chunks for semantic retrieval. Achieved 89% faithfulness and 84% context recall on a 20-question RAGAS benchmark via chunk tuning (1000 → 512 tokens). Reduced API cost ~60% through session-level vector store caching with video ID deduplication. Implements conversational memory via LangChain ConversationalRetrievalChain with async RAGAS scoring post-response to avoid latency overhead. Deployed on Streamlit Cloud.",
       "technologies": [
         "Python",
         "LangChain",
@@ -483,7 +483,7 @@
       "id": 4,
       "title": "AI Performance Monitor",
       "subtitle": "LLM Observability & CI/CD Evaluation Pipeline",
-      "description": "A production LLM observability system that captures 9 metrics per query \u2014 latency, token usage, cost, faithfulness, context recall, quality drift \u2014 with automated CI/CD evaluation via GitHub Actions.",
+      "description": "A production LLM observability system that captures 9 metrics per query — latency, token usage, cost, faithfulness, context recall, quality drift — with automated CI/CD evaluation via GitHub Actions.",
       "longDescription": "Engineered a FastAPI middleware that captures 9 metrics per query (latency, token usage, cost, faithfulness, context recall, quality drift) and persists them to SQLite, with Langfuse for per-call tracing. Pinpointed retrieval bottlenecks through p95 latency analysis, cutting mean response latency 32% via chunk optimisation (average query cost $0.0023). Automated a GitHub Actions + MLflow eval pipeline that runs RAGAS on every push to main and fails the build if faithfulness drops below 0.75. Streamlit dashboard with Slack webhook alerts on quality drift.",
       "technologies": [
         "Python",
@@ -660,8 +660,8 @@
     }
   ],
   "seo": {
-    "title": "Pratham Patil \u2013 Generative AI Engineer | RAG Pipelines & Agentic Systems",
-    "description": "AI & ML engineering graduate specializing in Generative AI \u2014 building end-to-end LLM systems, RAG pipelines, agentic workflows, and production observability stacks with LangChain, FastAPI, and ChromaDB.",
+    "title": "Pratham Patil – Generative AI Engineer",
+    "description": "AI & ML engineer specializing in Generative AI — building LLM systems, RAG pipelines, and agentic workflows with LangChain, FastAPI, and ChromaDB.",
     "keywords": [
       "Pratham Patil",
       "Generative AI Engineer",
@@ -688,6 +688,6 @@
       "icon": "/web-app-manifest.png",
       "appleTouchIcon": "/apple-touch-icon.png"
     },
-    "ogAlt": "Pratham Patil \u2013 Generative AI Engineer | RAG Pipelines & Agentic Systems"
+    "ogAlt": "Pratham Patil – Generative AI Engineer | RAG Pipelines & Agentic Systems"
   }
 }
