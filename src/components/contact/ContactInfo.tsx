@@ -27,7 +27,7 @@ const ContactInfo: React.FC = () => {
             <a
               key={item.label}
               href={item.href}
-              className="group flex items-center gap-4 rounded-xl border border-border bg-secondary/30 p-4 transition-all duration-200 hover:-translate-y-0.5 hover:border-primary/50"
+              className="group flex w-full items-center justify-start gap-4 rounded-xl border border-border bg-secondary/30 p-4 transition-all duration-200 hover:-translate-y-0.5 hover:border-primary/50"
             >
               <div className="grid h-11 w-11 flex-shrink-0 place-items-center rounded-xl iconic transition-transform duration-300 group-hover:scale-110">
                 <Icon size={18} aria-hidden="true" />

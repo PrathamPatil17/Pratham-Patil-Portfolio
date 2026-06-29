@@ -12,7 +12,7 @@ const MyJourney: React.FC = () => {
           aria-hidden="true"
         />
         {personalInfo.personal.story.map((paragraph) => (
-          <p key={paragraph} className="text-[0.925rem] leading-[1.85]">
+          <p key={paragraph} className="text-sm leading-7">
             {paragraph}
           </p>
         ))}

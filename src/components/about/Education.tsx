@@ -11,7 +11,7 @@ const Education: React.FC = () => {
         </div>
 
         <div className="flex-1">
-          <h4 className="text-[0.95rem] font-semibold text-foreground">{personalInfo.education.degree}</h4>
+          <h4 className="text-base font-semibold text-foreground">{personalInfo.education.degree}</h4>
           <p className="text-sm text-foreground/50">{personalInfo.education.institution}</p>
         </div>
 

@@ -43,7 +43,7 @@ const ProjectContent: React.FC<ProjectContentProps> = ({ project }) => {
       )}
 
       {/* Description */}
-      <p className="text-[0.85rem] leading-[1.7] text-foreground/60 line-clamp-3">
+      <p className="text-sm leading-[1.7] text-foreground/60 line-clamp-3">
         {project.description}
       </p>
 

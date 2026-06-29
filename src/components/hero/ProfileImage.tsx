@@ -27,7 +27,7 @@ const ProfileImage: React.FC<ProfileImageProps> = ({ size, className = '' }) => 
             alt="Pratham Patil - Generative AI Engineer"
             width={320}
             height={320}
-            className="h-full w-full object-cover scale-110"
+            className="h-full w-full object-cover object-top"
             priority
           />
         </div>

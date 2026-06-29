@@ -22,6 +22,7 @@ const ProjectImage: React.FC<ProjectImageProps> = ({ project, wide = false }) =>
         src={project.image}
         alt={`${project.title} - ${project.subtitle}`}
         fill
+        loading="lazy"
         className="object-cover transition-transform duration-500 group-hover:scale-105"
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 66vw, 50vw"
       />

@@ -57,7 +57,7 @@ const Contact: React.FC = () => {
                 <div className="space-y-3">
                   <a
                     href={personalInfo.social.email}
-                    className="group flex items-center gap-3 text-sm text-muted-foreground transition-colors duration-200 hover:text-foreground"
+                    className="group flex w-full items-center justify-start gap-3 text-sm text-muted-foreground transition-colors duration-200 hover:text-foreground"
                   >
                     <span className="grid h-7 w-7 flex-shrink-0 place-items-center rounded-lg iconic">
                       <Mail size={13} aria-hidden="true" />

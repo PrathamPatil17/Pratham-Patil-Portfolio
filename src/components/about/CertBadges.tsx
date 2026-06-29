@@ -40,7 +40,7 @@ const CertBadges: React.FC = () => {
           );
 
           return link ? (
-            <a key={cert.id} href={link} target="_blank" rel="noopener noreferrer" aria-label={`${cert.title} — ${cert.provider}`}>
+            <a key={cert.id} href={link} target="_blank" rel="noopener noreferrer" aria-label={`${cert.title} — ${cert.provider}`} className="block w-full">
               {card}
             </a>
           ) : (

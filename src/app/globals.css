@@ -36,7 +36,7 @@
     --secondary-foreground: 240 6% 65%;
 
     --muted:            240 14% 12%;
-    --muted-foreground: 240 6% 58%;     /* #8d8da8 — readable cool gray         */
+    --muted-foreground: 240 6% 63%;     /* #9898b4 — AA contrast on dark bg     */
 
     /* Accent = primary (ONE accent, not two) */
     --accent:           160 76% 44%;
@@ -85,7 +85,7 @@
     --secondary:        240 15% 10%;
     --secondary-foreground: 240 6% 65%;
     --muted:            240 14% 12%;
-    --muted-foreground: 240 6% 58%;
+    --muted-foreground: 240 6% 63%;
     --accent:           160 76% 44%;
     --accent-foreground: 0 0% 100%;
     --destructive:      0 62% 42%;
@@ -399,7 +399,10 @@
     to   { transform: translateX(-50%); }
   }
   .animate-marquee {
-    animation: marquee 50s linear infinite; /* slowed from 40s */
+    animation: marquee 50s linear infinite;
+  }
+  .marquee-mask:hover .animate-marquee {
+    animation-play-state: paused;
   }
   .marquee-mask {
     -webkit-mask-image: linear-gradient(to right, transparent, black 12%, black 88%, transparent);

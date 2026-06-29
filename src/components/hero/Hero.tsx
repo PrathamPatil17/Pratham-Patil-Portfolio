@@ -56,11 +56,11 @@ const Hero: React.FC = () => {
           {/* Name */}
           <h1 className="mb-5 leading-[1.0] tracking-[-0.03em]">
             {/* Annotation — deliberately small, airy, annotation-weight */}
-            <span className="mb-1 block text-lg font-normal tracking-wide text-foreground/30 sm:text-xl">
+            <span className="mb-1 block text-lg font-normal tracking-wide text-foreground/45 sm:text-xl">
               Hi, I&apos;m
             </span>
             {/* Display name — the hero, full weight */}
-            <span className="block text-[3.2rem] font-bold gradient-text sm:text-[4rem] lg:text-[5rem] xl:text-[5.5rem]">
+            <span className="block text-[3.2rem] font-extrabold gradient-text sm:text-[4rem] lg:text-[5rem] xl:text-[5.5rem]">
               {personalInfo.personal.name}
             </span>
           </h1>
@@ -76,13 +76,13 @@ const Hero: React.FC = () => {
           </div>
 
           {/* Location */}
-          <p className="mb-5 inline-flex items-center gap-1.5 text-sm text-foreground/40">
+          <p className="mb-5 inline-flex items-center gap-1.5 text-sm text-foreground/55">
             <MapPin size={12} aria-hidden="true" />
             {personalInfo.personal.location}
           </p>
 
           {/* Bio */}
-          <p className="mb-8 max-w-lg text-[0.95rem] leading-[1.8] text-foreground/60 sm:text-base">
+          <p className="mb-8 max-w-lg text-base leading-[1.8] text-foreground/60">
             {personalInfo.personal.bio}
           </p>
 
@@ -115,7 +115,7 @@ const Hero: React.FC = () => {
                 target={s.href.startsWith('mailto') ? undefined : '_blank'}
                 rel="noopener noreferrer"
                 aria-label={s.label}
-                className="grid h-10 w-10 place-items-center rounded-full border border-border bg-card/50 text-muted-foreground transition-all duration-200 hover:-translate-y-0.5 hover:border-primary/40 hover:text-primary"
+                className="grid h-11 w-11 place-items-center rounded-full border border-border bg-card/50 text-muted-foreground transition-all duration-200 hover:-translate-y-0.5 hover:border-primary/40 hover:text-primary"
               >
                 {s.icon}
               </a>

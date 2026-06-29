@@ -52,7 +52,9 @@ const Navigation: React.FC = () => {
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      const offset = 80;
+      const top = element.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top, behavior: 'smooth' });
     }
     setIsOpen(false);
   };
@@ -78,7 +80,7 @@ const Navigation: React.FC = () => {
               href={personalInfo.social.resume}
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden lg:inline-flex items-center rounded-full px-4 py-1.5 text-sm font-semibold text-white glow-button"
+              className="hidden lg:inline-flex items-center rounded-full border border-border/60 bg-card/50 px-4 py-1.5 text-sm font-medium text-muted-foreground backdrop-blur-sm transition-all duration-200 hover:border-primary/40 hover:text-primary"
             >
               Resume
             </a>

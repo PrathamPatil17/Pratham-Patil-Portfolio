@@ -35,7 +35,7 @@ const SkillCategory: React.FC<SkillCategoryProps> = ({ title, icon, skills }) =>
           </div>
           <h3 className="text-sm font-semibold text-foreground/90">{title}</h3>
         </div>
-        <span className="rounded-full bg-primary/10 px-2 py-0.5 text-[10px] font-semibold text-primary">
+        <span className="rounded-full bg-primary/10 px-2 py-0.5 text-[11px] font-semibold text-primary">
           {skills.length}
         </span>
       </div>

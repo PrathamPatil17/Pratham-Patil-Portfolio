@@ -33,7 +33,7 @@ const Certifications: React.FC = () => {
 
           <div className="relative mb-10 text-center">
             <span className="section-number" aria-hidden="true">05</span>
-            <div className="relative z-10">
+            <div className="relative z-10 pt-16 sm:pt-20">
               <span className="section-label mb-5">
                 <BadgeCheck size={13} aria-hidden="true" />
                 Credentials
