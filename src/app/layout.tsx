@@ -57,18 +57,11 @@ export const metadata: Metadata = {
     title: personalInfo.seo.title,
     description: personalInfo.seo.description,
     siteName: personalInfo.personal.name,
-    images: [{
-      url: personalInfo.seo.ogImage,
-      alt: "Pratham Patil – Generative AI Engineer | RAG Pipelines & Agentic Systems",
-      width: 1200,
-      height: 630,
-    }],
   },
   twitter: {
     card: 'summary_large_image',
     title: personalInfo.seo.title,
     description: personalInfo.seo.description,
-    images: [personalInfo.seo.ogImage],
   },
 
 };
