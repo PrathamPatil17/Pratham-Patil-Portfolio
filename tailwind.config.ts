@@ -19,6 +19,7 @@ export default {
 		},
 		extend: {
 			colors: {
+				pink: 'hsl(var(--pink))',
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
@@ -64,12 +65,14 @@ export default {
 				}
 			},
 			backgroundImage: {
-				'hero-gradient': 'var(--hero-gradient)',
-				'card-gradient': 'var(--card-gradient)', 
-				'accent-gradient': 'var(--accent-gradient)'
+				'gradient-main': 'var(--gradient-main)',
+				'gradient-pink': 'var(--gradient-pink)',
+				'accent-gradient': 'var(--gradient-main)'
 			},
 			fontFamily: {
-				'mono': ['JetBrains Mono', 'Fira Code', 'monospace'],
+				'sans': ['var(--font-inter)', 'system-ui', 'sans-serif'],
+				'display': ['var(--font-space-grotesk)', 'var(--font-inter)', 'sans-serif'],
+				'mono': ['var(--font-jetbrains-mono)', 'JetBrains Mono', 'monospace'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

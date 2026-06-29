@@ -21,22 +21,16 @@ interface ExperienceCardProps {
 
 const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience, index }) => {
   return (
-    <div className="relative flex items-start group">
-      {/* Timeline dot - Responsive positioning */}
-      <div className="absolute left-2 md:left-6 w-3 h-3 md:w-4 md:h-4 bg-gradient-to-r from-primary to-accent rounded-full border-2 md:border-4 border-background shadow-lg group-hover:scale-125 transition-transform duration-300 z-10"></div>
-      
-      {/* Timeline connector - Responsive positioning */}
-      <div className="absolute left-4 md:left-8 top-6 md:top-8 w-4 md:w-8 h-0.5 bg-gradient-to-r from-primary/50 to-transparent"></div>
-      
-      {/* Experience Card - SERVER RENDERED */}
-      <div className="ml-8 md:ml-20 w-full">
-        <div className="glass-card p-4 md:p-6 rounded-xl md:rounded-2xl transition-all duration-500 hover:shadow-2xl hover:shadow-primary/20">
-          {/* Card Header */}
-          <ExperienceHeader experience={experience} index={index} />
-          
-          {/* Card Content */}
-          <ExperienceContent experience={experience} index={index} />
-        </div>
+    <div className="relative">
+      {/* Timeline dot */}
+      <span
+        className="absolute -left-[26px] sm:-left-[34px] top-6 h-4 w-4 rounded-full bg-gradient-main ring-4 ring-background"
+        aria-hidden="true"
+      />
+
+      <div className="glass-card rounded-2xl p-5 sm:p-6">
+        <ExperienceHeader experience={experience} index={index} />
+        <ExperienceContent experience={experience} index={index} />
       </div>
     </div>
   );

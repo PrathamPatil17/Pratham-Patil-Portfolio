@@ -1,34 +1,50 @@
 import React from 'react';
+import { UserRound } from 'lucide-react';
 import Education from './Education';
 import MyJourney from './MyJourney';
-import HowIWork from './HowIWork';
+import CompactExperience from './CompactExperience';
+import CertBadges from './CertBadges';
+import Reveal from '@/components/Reveal';
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="py-20 bg-gradient-to-b from-background to-secondary/20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-8">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            About <span className="gradient-text">Me</span>
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Passionate about building transformative solutions that create real impact
-          </p>
+    <>
+      <hr className="section-divider" />
+      <section id="about" className="relative py-16 sm:py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+          {/* Header */}
+          <div className="mb-10">
+            <span className="section-label mb-3">
+              <UserRound size={12} aria-hidden="true" />
+              About Me
+            </span>
+            <h2 className="mt-3 text-3xl font-bold sm:text-4xl lg:text-5xl">
+              Building AI that ships to{' '}
+              <span className="gradient-text">production</span>
+            </h2>
+          </div>
+
+          {/* Education strip — at the top */}
+          <Education />
+
+          {/* Two columns: Story (left) | Experience (right) */}
+          <div className="mt-10 grid gap-10 lg:grid-cols-2 lg:gap-14">
+            <Reveal delay={0}>
+              <MyJourney />
+            </Reveal>
+            <Reveal delay={120}>
+              <CompactExperience />
+            </Reveal>
+          </div>
+
+          {/* Credentials strip */}
+          <Reveal delay={80}>
+            <CertBadges />
+          </Reveal>
         </div>
-
-        {/* Education Section */}
-        <Education />
-
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* My Journey Section */}
-          <MyJourney />
-
-          {/* How I Work Section */}
-          <HowIWork />
-        </div>
-
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 

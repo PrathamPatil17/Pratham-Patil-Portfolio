@@ -1,10 +1,9 @@
 import React from 'react';
 import { type LucideIcon } from 'lucide-react';
-import SkillItem from './SkillItem';
+import TechnologyIcon from './TechnologyIcon';
 
 interface Skill {
   readonly name: string;
-  readonly experience: string;
   readonly context: string;
   readonly category: string;
   readonly icon: string;
@@ -20,19 +19,38 @@ const SkillCategory: React.FC<SkillCategoryProps> = ({ title, icon, skills }) =>
   const Icon = icon;
 
   return (
-    <div className="glass-card p-4 rounded-xl w-96 flex-shrink-0">
-      <div className="flex items-center mb-4">
-        <div className="w-8 h-8 iconic rounded-lg bg-primary mr-3 flex items-center justify-center flex-shrink-0">
-          <Icon size={16} className="text-background stroke-2" />
+    <div className="relative overflow-hidden rounded-2xl border border-border bg-card/50 p-5 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary/25 hover:shadow-[0_0_24px_hsla(160,76%,44%,0.1)]">
+      {/* Subtle top accent line */}
+      <div
+        className="absolute inset-x-0 top-0 h-[1.5px] rounded-t-2xl"
+        style={{ background: 'linear-gradient(to right, hsl(160,76%,44%), hsl(178,68%,46%), transparent)' }}
+        aria-hidden="true"
+      />
+
+      {/* Header */}
+      <div className="mb-4 flex items-center justify-between">
+        <div className="flex items-center gap-2.5">
+          <div className="grid h-8 w-8 flex-shrink-0 place-items-center rounded-lg iconic" aria-hidden="true">
+            <Icon size={14} strokeWidth={2} />
+          </div>
+          <h3 className="text-sm font-semibold text-foreground/90">{title}</h3>
         </div>
-        <h3 className="md:text-lg font-semibold text-foreground">
-          {title}
-        </h3>
+        <span className="rounded-full bg-primary/10 px-2 py-0.5 text-[10px] font-semibold text-primary">
+          {skills.length}
+        </span>
       </div>
 
-      <div className="space-y-2">
+      {/* Chips */}
+      <div className="flex flex-wrap content-start items-start gap-1.5">
         {skills.map((skill) => (
-          <SkillItem key={skill.name} skill={skill} />
+          <span key={skill.name} className="tag-chip" title={skill.context}>
+            <TechnologyIcon
+              src={skill.icon || 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/devicon/devicon-original.svg'}
+              alt=""
+              size={11}
+            />
+            {skill.name}
+          </span>
         ))}
       </div>
     </div>

@@ -1,8 +1,8 @@
 import React from 'react';
-import { Telescope, BarChart2, Rocket, Layers } from 'lucide-react';
+import { Telescope, BarChart2, Rocket, Layers, type LucideIcon } from 'lucide-react';
 
 interface Principle {
-  readonly icon: React.ReactElement;
+  readonly icon: LucideIcon;
   readonly title: string;
   readonly description: string;
 }
@@ -10,44 +10,48 @@ interface Principle {
 const HowIWork: React.FC = () => {
   const principles: Principle[] = [
     {
-      icon: <Telescope size={24} className="text-black stroke-2" />,
-      title: "Curiosity as a Skill",
-      description: "Treating every new paper, framework, or dataset as an opportunity to build something better than yesterday."
+      icon: Telescope,
+      title: 'Curiosity as a Skill',
+      description: 'Treating every new paper, framework, or dataset as an opportunity to build something better than yesterday.',
     },
     {
-      icon: <BarChart2 size={24} className="text-black stroke-2" />,
-      title: "From Raw to Insight",
-      description: "Transforming messy, unstructured data into clean pipelines and dashboards that business teams can actually act on."
+      icon: BarChart2,
+      title: 'From Raw to Insight',
+      description: 'Transforming messy, unstructured data into clean pipelines and dashboards that teams can actually act on.',
     },
     {
-      icon: <Rocket size={24} className="text-black stroke-2" />,
-      title: "Model Meets Reality",
-      description: "Bridging the gap between research and production — every model I build is evaluated, monitored, and deployed with real-world constraints in mind."
+      icon: Rocket,
+      title: 'Model Meets Reality',
+      description: 'Bridging research and production — every model is evaluated, monitored, and deployed with real-world constraints in mind.',
     },
     {
-      icon: <Layers size={24} className="text-black stroke-2" />,
-      title: "Full Stack of Intelligence",
-      description: "From raw data ingestion to model inference to front-end dashboards — I connect the entire intelligence stack, not just one layer of it."
-    }
+      icon: Layers,
+      title: 'Full Stack of Intelligence',
+      description: 'From data ingestion to inference to front-end dashboards — I connect the entire intelligence stack, not just one layer.',
+    },
   ];
 
   return (
-    <div className="space-y-6">
-      <h3 className="text-2xl font-semibold text-foreground">How I Work</h3>
-      <div className="grid sm:grid-cols-2 gap-6">
-        {principles.map((principle, index) => (
-          <div key={principle.title} className="glass-card p-6 rounded-xl group">
-            <div className="flex items-center mb-4">
-              <div className="w-12 h-12 rounded-lg iconic mr-4 group-hover:scale-110 transition-transform duration-300 flex items-center justify-center flex-shrink-0">
-                {principle.icon}
+    <div>
+      <h3 className="mb-6 text-lg font-semibold text-foreground">How I Work</h3>
+      <div className="grid gap-4 sm:grid-cols-2">
+        {principles.map((principle) => {
+          const Icon = principle.icon;
+          return (
+            <div
+              key={principle.title}
+              className="group gradient-border glass-card rounded-2xl p-5 transition-all duration-300"
+            >
+              <div className="mb-4 grid h-10 w-10 place-items-center rounded-xl iconic transition-transform duration-300 group-hover:scale-110" aria-hidden="true">
+                <Icon size={18} className="text-white" strokeWidth={2} />
               </div>
-              <h4 className="font-semibold text-foreground">{principle.title}</h4>
+              <h4 className="mb-2 font-semibold text-foreground">{principle.title}</h4>
+              <p className="text-sm leading-relaxed text-muted-foreground">
+                {principle.description}
+              </p>
             </div>
-            <p className="text-sm text-muted-foreground leading-relaxed">
-              {principle.description}
-            </p>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </div>
   );

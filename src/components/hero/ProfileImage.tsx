@@ -8,27 +8,30 @@ interface ProfileImageProps {
 }
 
 const ProfileImage: React.FC<ProfileImageProps> = ({ size, className = '' }) => {
-  // Define size variants
   const sizeClasses = {
-    small: 'w-32 h-32 md:w-48 md:h-48', // Mobile/Tablet sizes
-    large: 'w-72 h-72' // Desktop size
+    small: 'w-40 h-40 sm:w-52 sm:h-52',
+    large: 'w-72 h-72 xl:w-80 xl:h-80'
   };
 
   return (
     <div className={`relative ${className}`}>
-      <div className={`${sizeClasses[size]} rounded-full bg-slate-700 overflow-hidden glass-card p-2`}>
-        <Image 
-          src={personalInfo.personal.profileImage} 
-          alt="Pratham Patil - Generative AI Engineer" 
-          width={320}
-          height={320}
-          className="w-full h-full object-cover rounded-full scale-125"
-          priority
-        />
+      {/* Single violet glow */}
+      <div className="absolute -inset-6 rounded-full opacity-20 blur-3xl" style={{ background: 'hsl(160,76%,44%)' }} aria-hidden="true" />
+      <div
+        className={`${sizeClasses[size]} relative rounded-full p-[2.5px]`}
+        style={{ background: 'linear-gradient(135deg, hsl(160,76%,44%) 0%, hsl(178,68%,46%) 100%)', boxShadow: '0 0 40px hsla(160,76%,44%,0.3)' }}
+      >
+        <div className="h-full w-full overflow-hidden rounded-full bg-card">
+          <Image
+            src={personalInfo.personal.profileImage}
+            alt="Pratham Patil - Generative AI Engineer"
+            width={320}
+            height={320}
+            className="h-full w-full object-cover scale-110"
+            priority
+          />
+        </div>
       </div>
-      {/* Glowing ring effect */}
-      <div className="absolute -inset-4 rounded-full border-2 border-primary/20 animate-spin animate-duration-8000"></div>
-      <div className="absolute -inset-8 rounded-full border border-accent/10 animate-spin animate-duration-12000 animate-reverse"></div>
     </div>
   );
 };

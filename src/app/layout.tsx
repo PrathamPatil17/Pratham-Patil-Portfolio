@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono } from "next/font/google";
+import { Inter, JetBrains_Mono, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
 import { QueryProvider } from "@/components/providers/QueryProvider";
@@ -8,6 +8,7 @@ import { TooltipProvider } from '@/components/ui/tooltip';
 import { publicUrl } from "@/constants";
 import personalInfo from "@/data/personal-info.json";
 import { Analytics } from '@vercel/analytics/next';
+import ScrollProgress from "@/components/ScrollProgress";
 
 const myUrl = process.env.NEXT_PUBLIC_SITE_URL || publicUrl;
 
@@ -19,6 +20,11 @@ const inter = Inter({
 const jetbrainsMono = JetBrains_Mono({
   subsets: ['latin'],
   variable: '--font-jetbrains-mono',
+});
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ['latin'],
+  variable: '--font-space-grotesk',
 });
 
 export const metadata: Metadata = {
@@ -74,7 +80,7 @@ interface RootLayoutProps {
 const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.variable} ${jetbrainsMono.variable} antialiased`}>
+      <body className={`${inter.variable} ${jetbrainsMono.variable} ${spaceGrotesk.variable} antialiased`}>
         {/* JSON-LD Structured Data */}
         <script
           type="application/ld+json"
@@ -124,6 +130,9 @@ const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
         >
           <QueryProvider>
             <TooltipProvider>
+              <ScrollProgress />
+              <div className="noise-overlay" aria-hidden="true" />
+              <a href="#main-content" className="skip-link">Skip to main content</a>
               {children}
               <ToastProvider />
             </TooltipProvider>

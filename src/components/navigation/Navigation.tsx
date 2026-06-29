@@ -1,10 +1,11 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import Logo from './Logo';
 import DesktopNavigation from './DesktopNavigation';
 import MobileMenuButton from './MobileMenuButton';
 import MobileNavigation from './MobileNavigation';
+import personalInfo from '@/data/personal-info.json';
 
 interface NavItem {
   readonly name: string;
@@ -13,29 +14,40 @@ interface NavItem {
 
 const Navigation: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
-    if (window.scrollY > 50) {
-      setScrolled(true);
-    }
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  const [activeSection, setActiveSection] = useState('');
 
   const navItems: NavItem[] = [
     { name: 'About', href: '#about' },
     { name: 'Skills', href: '#skills' },
-    { name: 'Experience', href: '#experience' },
     { name: 'Projects', href: '#projects' },
-    { name: 'Publications', href: '#publications' },
-    { name: 'Certifications', href: '#certifications' },
-    { name: 'Awards', href: '#awards' },
     { name: 'Contact', href: '#contact' }
   ];
+
+  const handleScroll = useCallback(() => {
+    const sections = navItems.map(item => item.href.slice(1));
+    const current = sections.find(section => {
+      const el = document.getElementById(section);
+      if (!el) return false;
+      const rect = el.getBoundingClientRect();
+      return rect.top <= 120 && rect.bottom >= 120;
+    });
+    if (current) setActiveSection(current);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => {
+    handleScroll();
+    let timer: ReturnType<typeof setTimeout>;
+    const debounced = () => {
+      clearTimeout(timer);
+      timer = setTimeout(handleScroll, 50);
+    };
+    window.addEventListener('scroll', debounced, { passive: true });
+    return () => {
+      window.removeEventListener('scroll', debounced);
+      clearTimeout(timer);
+    };
+  }, [handleScroll]);
 
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
@@ -46,26 +58,39 @@ const Navigation: React.FC = () => {
   };
 
   return (
-    <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-      scrolled ? 'glass-card backdrop-blur-md border-x-0' : 'bg-transparent'
-    }`}>
-      <div className="max-w-[90%] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          {/* Logo */}
+    <nav
+      role="navigation"
+      aria-label="Main navigation"
+      className="fixed top-4 left-0 right-0 z-50 flex justify-center px-4"
+    >
+      <div className="w-full max-w-3xl">
+        <div className="flex items-center justify-between gap-4 rounded-full px-4 py-2 backdrop-blur-xl border border-white/10 bg-card/80 shadow-[0_4px_24px_rgba(0,0,0,0.35)]">
           <Logo scrollToSection={scrollToSection} />
 
-          {/* Desktop Navigation */}
-          <DesktopNavigation navItems={navItems} scrollToSection={scrollToSection} />
+          <DesktopNavigation
+            navItems={navItems}
+            scrollToSection={scrollToSection}
+            activeSection={activeSection}
+          />
 
-          {/* Mobile menu button */}
-          <MobileMenuButton isOpen={isOpen} setIsOpen={setIsOpen} />
+          <div className="flex items-center gap-2">
+            <a
+              href={personalInfo.social.resume}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden lg:inline-flex items-center rounded-full px-4 py-1.5 text-sm font-semibold text-white glow-button"
+            >
+              Resume
+            </a>
+            <MobileMenuButton isOpen={isOpen} setIsOpen={setIsOpen} />
+          </div>
         </div>
 
-        {/* Mobile Navigation */}
-        <MobileNavigation 
-          navItems={navItems} 
-          isOpen={isOpen} 
-          scrollToSection={scrollToSection} 
+        <MobileNavigation
+          navItems={navItems}
+          isOpen={isOpen}
+          scrollToSection={scrollToSection}
+          activeSection={activeSection}
         />
       </div>
     </nav>

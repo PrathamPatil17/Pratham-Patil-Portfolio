@@ -3,7 +3,6 @@
 
 import React from 'react';
 import { Menu, X } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 
 interface MobileMenuButtonProps {
   readonly isOpen: boolean;
@@ -12,16 +11,15 @@ interface MobileMenuButtonProps {
 
 const MobileMenuButton: React.FC<MobileMenuButtonProps> = ({ isOpen, setIsOpen }) => {
   return (
-    <div className="lg:hidden">
-      <Button
-        variant="ghost"
-        size="sm"
-        onClick={() => setIsOpen(!isOpen)}
-        className="text-foreground"
-      >
-        {isOpen ? <X size={24} /> : <Menu size={24} />}
-      </Button>
-    </div>
+    <button
+      type="button"
+      onClick={() => setIsOpen(!isOpen)}
+      aria-label={isOpen ? 'Close menu' : 'Open menu'}
+      aria-expanded={isOpen}
+      className="lg:hidden h-9 w-9 rounded-full flex items-center justify-center text-foreground hover:bg-white/10 transition-colors duration-200"
+    >
+      {isOpen ? <X size={22} /> : <Menu size={22} />}
+    </button>
   );
 };
 

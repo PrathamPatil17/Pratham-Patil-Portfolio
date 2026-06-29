@@ -1,6 +1,5 @@
 import React from 'react';
-import { Code, Zap } from 'lucide-react';
-import { Badge } from '@/components/ui/badge';
+import { Zap } from 'lucide-react';
 
 interface ExperienceContentProps {
   experience: {
@@ -12,57 +11,36 @@ interface ExperienceContentProps {
   index: number;
 }
 
-const ExperienceContent: React.FC<ExperienceContentProps> = ({ experience, index }) => {
+const ExperienceContent: React.FC<ExperienceContentProps> = ({ experience }) => {
   return (
     <>
-      {/* Description - SERVER RENDERED FOR SEO */}
-      <p className="text-sm md:text-base text-muted-foreground leading-relaxed mb-4">
+      <p className="mb-5 text-sm leading-relaxed text-muted-foreground md:text-base">
         {experience.description}
       </p>
-      
-      {/* Expanded Content - SERVER RENDERED FOR SEO */}
-      <div 
-        id={`experience-details-${experience.id}`}
-        className="transition-all duration-500 overflow-hidden"
-        style={{
-          maxHeight: index === 0 ? 'none' : '0',
-          opacity: index === 0 ? '1' : '0'
-        }}
-      >
-        {/* Key Achievements - SERVER RENDERED */}
-        <div className="mb-4 md:mb-6">
-          <h5 className="text-xs md:text-sm font-semibold text-foreground mb-3 flex items-center">
-            <Zap size={14} className="mr-2 text-accent flex-shrink-0" />
-            Key Achievements
-          </h5>
-          <ul className="space-y-2">
-            {experience.achievements.map((achievement) => (
-              <li key={achievement} className="flex items-start text-xs md:text-sm text-muted-foreground leading-relaxed">
-                <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                <span className="flex-1">{achievement}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-        
-        {/* Technologies - SERVER RENDERED */}
-        <div>
-          <h5 className="text-xs md:text-sm font-semibold text-foreground mb-3 flex items-center">
-            <Code size={14} className="mr-2 text-accent flex-shrink-0" />
-            Technologies Used
-          </h5>
-          <div className="flex flex-wrap gap-1.5 md:gap-2">
-            {experience.technologies.map((tech) => (
-              <Badge 
-                key={tech}
-                variant="secondary"
-                className="bg-primary/10 text-primary border-primary/20 hover:bg-primary/20 transition-colors duration-200 text-xs px-2 py-1"
-              >
-                {tech}
-              </Badge>
-            ))}
-          </div>
-        </div>
+
+      {/* Achievements */}
+      <div className="mb-5">
+        <h5 className="mb-3 flex items-center gap-2 text-sm font-semibold text-foreground">
+          <Zap size={14} className="text-accent" aria-hidden="true" />
+          Key Achievements
+        </h5>
+        <ul className="space-y-2">
+          {experience.achievements.map((achievement) => (
+            <li key={achievement} className="flex items-start gap-3 text-sm leading-relaxed text-muted-foreground">
+              <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-gradient-main" aria-hidden="true" />
+              <span>{achievement}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      {/* Tech chips */}
+      <div className="flex flex-wrap gap-2">
+        {experience.technologies.map((tech) => (
+          <span key={tech} className="tag-chip">
+            {tech}
+          </span>
+        ))}
       </div>
     </>
   );

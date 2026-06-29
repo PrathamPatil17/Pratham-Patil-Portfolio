@@ -1,27 +1,28 @@
-// Server Component - Static content rendered on server for SEO benefits
 import React from 'react';
-import BrandSection from './BrandSection';
-import QuickLinks from './QuickLinks';
-import ContactInfo from './ContactInfo';
-import BottomBar from './BottomBar';
+import ScrollButton from '@/components/ScrollButton';
+import personalInfo from '@/data/personal-info.json';
 
 const Footer: React.FC = () => {
+  const year = new Date().getFullYear();
+
   return (
-    <footer className="bg-gradient-to-b from-background via-secondary/10 to-background border-t border-border/50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-          {/* Brand & Description */}
-          <BrandSection />
-
-          {/* Quick Links */}
-          <QuickLinks />
-
-          {/* Contact Info */}
-          <ContactInfo />
-        </div>
-
-        {/* Bottom Bar */}
-        <BottomBar />
+    <footer className="relative border-t border-border/30 py-6">
+      <div
+        className="absolute inset-x-0 top-0 h-px"
+        style={{ background: 'linear-gradient(to right, transparent, hsl(160,76%,44%,0.4), hsl(178,68%,46%,0.3), transparent)' }}
+        aria-hidden="true"
+      />
+      <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-4 sm:flex-row sm:px-6 lg:px-8">
+        <ScrollButton
+          targetId="hero"
+          className="text-sm font-semibold gradient-text"
+          ariaLabel="Back to top"
+        >
+          {personalInfo.personal.name}
+        </ScrollButton>
+        <p className="text-xs text-muted-foreground">
+          © {year} · Built with Next.js & Tailwind CSS
+        </p>
       </div>
     </footer>
   );

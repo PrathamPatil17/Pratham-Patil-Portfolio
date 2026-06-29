@@ -1,4 +1,4 @@
-// Server Component - No 'use client' directive for SEO benefits
+// Server-friendly presentational component
 import React from 'react';
 
 interface NavItem {
@@ -9,23 +9,29 @@ interface NavItem {
 interface DesktopNavigationProps {
   readonly navItems: NavItem[];
   readonly scrollToSection: (href: string) => void;
+  readonly activeSection?: string;
 }
 
-const DesktopNavigation: React.FC<DesktopNavigationProps> = ({ navItems, scrollToSection }) => {
+const DesktopNavigation: React.FC<DesktopNavigationProps> = ({ navItems, scrollToSection, activeSection }) => {
   return (
-    <div className="hidden lg:block">
-      <div className="ml-10 flex items-baseline space-x-8">
-        {navItems.map((item) => (
+    <div className="hidden lg:flex items-center gap-1">
+      {navItems.map((item) => {
+        const isActive = activeSection === item.href.slice(1);
+        return (
           <button
             key={item.name}
             onClick={() => scrollToSection(item.href)}
-            className="text-foreground hover:text-primary transition-colors duration-200 relative group"
+            aria-current={isActive ? 'true' : undefined}
+            className={`relative px-3.5 py-1.5 rounded-full text-sm font-medium transition-all duration-200 ${
+              isActive
+                ? 'text-white bg-white/10'
+                : 'text-muted-foreground hover:text-foreground hover:bg-white/5'
+            }`}
           >
             {item.name}
-            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent-gradient group-hover:w-full transition-all duration-300"></span>
           </button>
-        ))}
-      </div>
+        );
+      })}
     </div>
   );
 };

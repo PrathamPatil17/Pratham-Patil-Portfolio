@@ -1,10 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Send, CheckCircle, AlertCircle } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
+import { Send, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { sendContactEmail, type ContactFormData } from '@/lib/actions/contact';
 
@@ -15,66 +12,48 @@ interface FormData {
   message: string;
 }
 
+const inputClass =
+  'w-full rounded-xl border border-border bg-secondary/30 px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground/60 outline-none transition-all duration-200 focus:border-primary/50 focus:bg-secondary/50 focus:ring-1 focus:ring-primary/30';
+
 const ContactForm: React.FC = () => {
   const [formData, setFormData] = useState<FormData>({
     name: '',
     email: '',
-    subject: '',
-    message: ''
+    subject: 'Portfolio Inquiry',
+    message: '',
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData(prev => ({
-      ...prev,
-      [e.target.name]: e.target.value
-    }));
+    setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
     try {
-      // Send email using server action
       const result = await sendContactEmail(formData as ContactFormData);
-      
       if (result.success) {
         toast({
-          title: "Message sent successfully!",
+          title: 'Message sent!',
           description: result.message,
-          action: (
-            <CheckCircle className="h-5 w-5 text-green-500" />
-          ),
+          action: <CheckCircle className="h-5 w-5 text-green-500" />,
         });
-        
-        // Reset form
-        setFormData({
-          name: '',
-          email: '',
-          subject: '',
-          message: ''
-        });
+        setFormData({ name: '', email: '', subject: 'Portfolio Inquiry', message: '' });
       } else {
         toast({
-          title: "Failed to send message",
+          title: 'Failed to send',
           description: result.message,
-          variant: "destructive",
-          action: (
-            <AlertCircle className="h-5 w-5 text-red-500" />
-          ),
+          variant: 'destructive',
+          action: <AlertCircle className="h-5 w-5 text-red-500" />,
         });
       }
-    } catch (error) {
-      console.error('Contact form error:', error);
+    } catch {
       toast({
-        title: "Error",
-        description: "An unexpected error occurred. Please try again.",
-        variant: "destructive",
-        action: (
-          <AlertCircle className="h-5 w-5 text-red-500" />
-        ),
+        title: 'Error',
+        description: 'Something went wrong. Please try again.',
+        variant: 'destructive',
       });
     } finally {
       setIsSubmitting(false);
@@ -82,97 +61,99 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <div>
-      <h3 className="text-2xl font-semibold mb-6 text-foreground">
-        Send Message
-      </h3>
-      
-      <form onSubmit={handleSubmit} className="space-y-6">
-        <div className="grid md:grid-cols-2 gap-6">
-          <div>
-            <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
-              Name *
-            </label>
-            <Input
-              id="name"
-              name="name"
-              type="text"
-              required
-              value={formData.name}
-              onChange={handleChange}
-              className="bg-background/50 border-border focus:border-primary"
-              placeholder="Your full name"
-            />
-          </div>
-          
-          <div>
-            <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
-              Email *
-            </label>
-            <Input
-              id="email"
-              name="email"
-              type="email"
-              required
-              value={formData.email}
-              onChange={handleChange}
-              className="bg-background/50 border-border focus:border-primary"
-              placeholder="your.email@example.com"
-            />
-          </div>
-        </div>
-        
-        <div>
-          <label htmlFor="subject" className="block text-sm font-medium text-foreground mb-2">
-            Subject *
+    <form onSubmit={handleSubmit} className="flex h-full flex-col gap-4">
+      <div>
+        <p className="text-lg font-semibold text-foreground">Send a message</p>
+        <p className="mt-0.5 text-sm text-foreground/45">I&apos;ll reply within 24 hours</p>
+      </div>
+
+      {/* Name + Email row */}
+      <div className="grid gap-3 sm:grid-cols-2">
+        <div className="flex flex-col gap-1.5">
+          <label htmlFor="name" className="text-sm font-medium text-foreground/70">
+            Name <span className="text-primary">*</span>
           </label>
-          <Input
-            id="subject"
-            name="subject"
+          <input
+            id="name"
+            name="name"
             type="text"
             required
-            value={formData.subject}
+            value={formData.name}
             onChange={handleChange}
-            className="bg-background/50 border-border focus:border-primary"
-            placeholder="Project discussion, collaboration, etc."
+            placeholder="Pratham Patil"
+            className={inputClass}
           />
         </div>
-        
-        <div>
-          <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
-            Message *
+        <div className="flex flex-col gap-1.5">
+          <label htmlFor="email" className="text-sm font-medium text-foreground/70">
+            Email <span className="text-primary">*</span>
           </label>
-          <Textarea
-            id="message"
-            name="message"
+          <input
+            id="email"
+            name="email"
+            type="email"
             required
-            value={formData.message}
+            value={formData.email}
             onChange={handleChange}
-            rows={6}
-            className="bg-background/50 border-border focus:border-primary resize-none"
-            placeholder="Tell me about your project, timeline, budget, and any specific requirements..."
+            placeholder="you@example.com"
+            className={inputClass}
           />
         </div>
-        
-        <Button
-          type="submit"
-          disabled={isSubmitting}
-          className="w-full glow-button iconic"
-        >
-          {isSubmitting ? (
-            <>
-              <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"></div>
-              Sending...
-            </>
-          ) : (
-            <>
-              <Send size={18} className="mr-2 stroke" />
-              Send Message
-            </>
-          )}
-        </Button>
-      </form>
-    </div>
+      </div>
+
+      {/* Subject */}
+      <div className="flex flex-col gap-1.5">
+        <label htmlFor="subject" className="text-sm font-medium text-foreground/70">
+          Subject <span className="text-primary">*</span>
+        </label>
+        <input
+          id="subject"
+          name="subject"
+          type="text"
+          required
+          value={formData.subject}
+          onChange={handleChange}
+          placeholder="Project collaboration, job opportunity…"
+          className={inputClass}
+        />
+      </div>
+
+      {/* Message */}
+      <div className="flex flex-1 flex-col gap-1.5">
+        <label htmlFor="message" className="text-sm font-medium text-foreground/70">
+          Message <span className="text-primary">*</span>
+        </label>
+        <textarea
+          id="message"
+          name="message"
+          required
+          value={formData.message}
+          onChange={handleChange}
+          rows={5}
+          placeholder="Tell me about what you're working on, your timeline, and how I can help…"
+          className={`${inputClass} resize-none flex-1`}
+        />
+      </div>
+
+      {/* Submit */}
+      <button
+        type="submit"
+        disabled={isSubmitting}
+        className="glow-button flex w-full items-center justify-center gap-2 rounded-xl py-3 text-sm font-semibold disabled:opacity-70"
+      >
+        {isSubmitting ? (
+          <>
+            <Loader2 size={16} className="animate-spin" aria-hidden="true" />
+            Sending…
+          </>
+        ) : (
+          <>
+            <Send size={15} aria-hidden="true" />
+            Send Message
+          </>
+        )}
+      </button>
+    </form>
   );
 };
 

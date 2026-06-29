@@ -1,7 +1,5 @@
 import React from 'react';
-import { Github } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
+import { Github, ExternalLink, Lock, Zap } from 'lucide-react';
 
 interface ProjectContentProps {
   project: {
@@ -16,54 +14,69 @@ interface ProjectContentProps {
   };
 }
 
+// Key impact metrics per project — quick proof of real results
+const projectHighlights: Record<number, string> = {
+  1: 'Dual-pipeline agentic · Multi-language · 3 voice styles',
+  2: 'MMR semantic reranking · GPT-4 · Bearer auth',
+  3: '89% faithfulness · 84% context recall · RAGAS eval',
+  4: '32% latency cut · $0.0023/query · CI/CD eval pipeline',
+  5: 'PDF · DOCX · TXT · Docker deployed',
+  6: 'MySQL + PostgreSQL · EDA pipeline · Kaggle API',
+  7: 'Tableau Public · Attrition & workforce trends',
+};
+
+const isExternalLink = (url: string) => /tableau|public/i.test(url);
+
 const ProjectContent: React.FC<ProjectContentProps> = ({ project }) => {
+  const hasLink = project.github.trim().length > 0;
+  const external = isExternalLink(project.github);
+  const highlight = projectHighlights[project.id];
+
   return (
-    <div className="p-6">
-      <div className="flex items-center justify-between mb-3">
-        <Badge variant="secondary" className="text-xs">
-          {project.status}
-        </Badge>
-        {project.featured && (
-          <Badge variant="default" className="text-xs">
-            Featured
-          </Badge>
-        )}
-      </div>
+    <div className="flex flex-1 flex-col gap-3 p-4">
+      {/* Impact metric badge */}
+      {highlight && (
+        <div className="inline-flex items-center gap-1.5 rounded-full border border-primary/20 bg-primary/8 px-3 py-1 text-xs font-medium text-primary self-start">
+          <Zap size={10} aria-hidden="true" />
+          {highlight}
+        </div>
+      )}
 
-      <h3 className="text-xl font-bold text-foreground mb-2">
-        {project.title}
-      </h3>
-      
-      <p className="text-sm text-primary font-medium mb-3">
-        {project.subtitle}
-      </p>
-
-      <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+      {/* Description */}
+      <p className="text-[0.85rem] leading-[1.7] text-foreground/60 line-clamp-3">
         {project.description}
       </p>
 
-      {/* Technologies */}
-      <div className="flex flex-wrap gap-2 mb-4">
-        {project.technologies.slice(0, 4).map((tech, techIndex) => (
-          <Badge key={techIndex} variant="outline" className="text-xs bg-primary/10">
+      {/* Tech chips */}
+      <div className="flex flex-wrap gap-1.5">
+        {project.technologies.slice(0, 5).map((tech) => (
+          <span key={tech} className="tag-chip">
             {tech}
-          </Badge>
+          </span>
         ))}
-        {project.technologies.length > 4 && (
-          <Badge variant="outline" className="text-xs bg-primary/10">
-            +{project.technologies.length - 4} more
-          </Badge>
+        {project.technologies.length > 5 && (
+          <span className="tag-chip opacity-60">+{project.technologies.length - 5}</span>
         )}
       </div>
 
-      {/* Action Buttons */}
-      <div className="flex space-x-3">
-        <Button size="sm" variant="outline" asChild className="flex-1 group/view-code">
-          <a href={project.github} target="_blank" rel="noopener noreferrer">
-            <Github className="w-4 h-4 mr-2 stroke-white group-hover/view-code:stroke-black" />
-            View Code
+      {/* Link */}
+      <div className="mt-auto pt-1">
+        {hasLink ? (
+          <a
+            href={project.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 rounded-full border border-border bg-secondary/50 px-3.5 py-1.5 text-xs font-medium text-foreground transition-all duration-200 hover:-translate-y-0.5 hover:border-primary/50 hover:text-primary"
+          >
+            {external ? <ExternalLink size={13} aria-hidden="true" /> : <Github size={13} aria-hidden="true" />}
+            {external ? 'View Dashboard' : 'View Code'}
           </a>
-        </Button>
+        ) : (
+          <span className="inline-flex items-center gap-1.5 rounded-full border border-border bg-secondary/30 px-3.5 py-1.5 text-xs font-medium text-muted-foreground">
+            <Lock size={12} aria-hidden="true" />
+            Private Repo
+          </span>
+        )}
       </div>
     </div>
   );

@@ -1,8 +1,7 @@
 // Server Component - No 'use client' directive for SEO benefits
 import React from 'react';
-import ProjectFilter from './ProjectFilter';
-import ProjectCard from './ProjectCard';
-import CallToAction from './CallToAction';
+import { FolderGit2 } from 'lucide-react';
+import ProjectGrid from './ProjectGrid';
 import personalInfo from '@/data/personal-info.json';
 
 interface Project {
@@ -21,48 +20,42 @@ interface Project {
 }
 
 const Projects: React.FC = () => {
-  // Use actual projects from personal data and sort by priority
   const projects: readonly Project[] = personalInfo.projects
-    .slice() // Create a copy to avoid mutating the original array
-    .sort((a, b) => {
-      // Sort by priority (lower number = higher priority)
-      // Projects without priority go to the end
-      const priorityA = a.priority ?? 999;
-      const priorityB = b.priority ?? 999;
-      return priorityA - priorityB;
-    });
+    .slice()
+    .sort((a, b) => (a.priority ?? 999) - (b.priority ?? 999));
 
-  // Dynamically generate categories from all project categories
-  const allCategories = projects.flatMap(project => project.categories);
-  const uniqueCategories = Array.from(new Set(allCategories)).sort((a, b) => a.localeCompare(b));
+  const allCategories = projects.flatMap((p) => p.categories);
+  const uniqueCategories = Array.from(new Set(allCategories)).sort((a, b) =>
+    a.localeCompare(b)
+  );
   const categories = ['All', ...uniqueCategories];
 
   return (
-    <section id="projects" className="py-20 bg-muted/30">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Featured <span className="gradient-text">Projects</span>
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Innovative solutions that bridge AI/ML technology with real-world impact
-          </p>
+    <>
+      <hr className="section-divider" />
+      <section id="projects" className="relative py-16 sm:py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+          {/* Header */}
+          <div className="mb-10 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <span className="section-label mb-3">
+                <FolderGit2 size={12} aria-hidden="true" />
+                Work
+              </span>
+              <h2 className="mt-3 text-3xl font-bold sm:text-4xl lg:text-5xl">
+                Featured <span className="gradient-text">Projects</span>
+              </h2>
+            </div>
+            <p className="text-sm text-muted-foreground sm:max-w-[200px] sm:text-right">
+              {projects.length} projects · AI · Data · Full-Stack
+            </p>
+          </div>
+
+          <ProjectGrid projects={projects} categories={categories} />
         </div>
-
-        {/* Category Filter - CLIENT COMPONENT FOR INTERACTIVITY */}
-        <ProjectFilter categories={categories} />
-
-        {/* Projects Grid - ALL PROJECTS SERVER-RENDERED FOR SEO */}
-        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
-          {projects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
-          ))}
-        </div>
-
-        {/* Call to Action */}
-        <CallToAction />
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 

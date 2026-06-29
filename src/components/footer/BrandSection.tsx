@@ -18,19 +18,22 @@ const BrandSection: React.FC = () => {
   ];
 
   return (
-    <div className="space-y-3 md:space-y-4 text-center md:text-left">
-      <ScrollButton 
+    <div className="space-y-4 text-center md:text-left">
+      <ScrollButton
         targetId="hero"
-        className="text-xl md:text-2xl font-bold gradient-text font-mono hover:scale-105 transition-transform duration-200 inline-block"
+        className="inline-flex items-center gap-2 font-mono text-xl font-bold"
         ariaLabel="Scroll to top"
       >
-        {`<${personalInfo.personal.nickname}/>`}
+        <span className="grid h-8 w-8 place-items-center rounded-lg text-sm font-bold text-white iconic">
+          {personalInfo.personal.nickname.charAt(0)}
+        </span>
+        <span className="gradient-text">{`${personalInfo.personal.nickname}.dev`}</span>
       </ScrollButton>
-      <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+      <p className="mx-auto max-w-sm text-sm leading-relaxed text-muted-foreground md:mx-0">
         {personalInfo.personal.closingBio}
       </p>
-      <div className="flex justify-center md:justify-start space-x-3 md:space-x-4">
-        {socialLinks.map((social, index) => {
+      <div className="flex justify-center gap-3 md:justify-start">
+        {socialLinks.map((social) => {
           const Icon = social.icon;
           return (
             <a
@@ -38,10 +41,10 @@ const BrandSection: React.FC = () => {
               href={social.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-lg bg-muted hover:bg-primary/20 hover:scale-110 transition-all duration-200 group"
+              className="grid h-10 w-10 place-items-center rounded-full border border-border bg-secondary/40 text-muted-foreground transition-all duration-200 hover:-translate-y-1 hover:border-primary/50 hover:text-primary"
               aria-label={social.label}
             >
-              <Icon size={18} className="text-muted-foreground group-hover:text-primary" />
+              <Icon size={17} aria-hidden="true" />
             </a>
           );
         })}

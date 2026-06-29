@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Button } from '@/components/ui/button';
 import { ChevronDown } from 'lucide-react';
 
 interface ProjectFilterProps {
@@ -28,7 +27,7 @@ const ProjectFilter: React.FC<ProjectFilterProps> = ({ categories, onCategoryCha
       const categoriesArray = cardCategories ? cardCategories.split(',') : [];
       
       if (selectedCategory === 'All' || categoriesArray.includes(selectedCategory)) {
-        cardElement.style.display = 'block';
+        cardElement.style.display = '';
       } else {
         cardElement.style.display = 'none';
       }
@@ -55,19 +54,24 @@ const ProjectFilter: React.FC<ProjectFilterProps> = ({ categories, onCategoryCha
         </div>
       </div>
 
-      {/* Desktop: Button Layout */}
-      <div className="hidden md:flex flex-wrap justify-center gap-3">
-        {categories.map((category) => (
-          <Button
-            key={category}
-            variant={selectedCategory === category ? 'default' : 'outline'}
-            size="sm"
-            onClick={() => handleCategoryChange(category)}
-            className="transition-all duration-200 hover:scale-105"
-          >
-            {category === 'All' ? 'All Projects' : category}
-          </Button>
-        ))}
+      {/* Desktop: Pill Layout */}
+      <div className="hidden md:flex flex-wrap justify-center gap-2.5">
+        {categories.map((category) => {
+          const active = selectedCategory === category;
+          return (
+            <button
+              key={category}
+              onClick={() => handleCategoryChange(category)}
+              className={`rounded-full px-4 py-2 text-sm font-medium transition-all duration-200 ${
+                active
+                  ? 'text-white glow-button'
+                  : 'border border-border bg-secondary/50 text-muted-foreground hover:-translate-y-0.5 hover:border-primary/50 hover:text-foreground'
+              }`}
+            >
+              {category === 'All' ? 'All Projects' : category}
+            </button>
+          );
+        })}
       </div>
     </div>
   );

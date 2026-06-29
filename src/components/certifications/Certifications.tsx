@@ -1,5 +1,6 @@
 // Server Component - No 'use client' directive for SEO benefits
 import React from 'react';
+import { BadgeCheck } from 'lucide-react';
 import CertificationCard from './CertificationCard';
 import CallToAction from './CallToAction';
 import personalInfo from '@/data/personal-info.json';
@@ -25,27 +26,37 @@ const Certifications: React.FC = () => {
   const certifications: readonly Certification[] = personalInfo.certifications;
 
   return (
-    <section id="certifications" className="py-20 bg-gradient-to-b from-background via-secondary/10 to-background">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Professional <span className="gradient-text">Certifications</span>
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Continuous learning and professional development in cutting-edge technologies
-          </p>
-        </div>
+    <>
+      <hr className="section-divider" />
+      <section id="certifications" className="relative py-16 sm:py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
-        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8 items-stretch">
-          {certifications.map((cert, index) => (
-            <CertificationCard key={cert.id} cert={cert} index={index} />
-          ))}
-        </div>
+          <div className="relative mb-10 text-center">
+            <span className="section-number" aria-hidden="true">05</span>
+            <div className="relative z-10">
+              <span className="section-label mb-5">
+                <BadgeCheck size={13} aria-hidden="true" />
+                Credentials
+              </span>
+              <h2 className="mt-4 text-3xl font-bold sm:text-4xl lg:text-5xl">
+                Professional <span className="gradient-text">Certifications</span>
+              </h2>
+              <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
+                Continuous learning across cutting-edge AI, cloud, and data technologies.
+              </p>
+            </div>
+          </div>
 
-        {/* Call to Action */}
-        <CallToAction />
-      </div>
-    </section>
+          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+            {certifications.map((cert, index) => (
+              <CertificationCard key={cert.id} cert={cert} index={index} />
+            ))}
+          </div>
+
+          <CallToAction />
+        </div>
+      </section>
+    </>
   );
 };
 

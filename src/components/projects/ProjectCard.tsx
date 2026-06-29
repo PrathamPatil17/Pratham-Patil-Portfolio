@@ -19,20 +19,35 @@ interface Project {
 
 interface ProjectCardProps {
   project: Project;
+  index: number;
+  cardNumber: number;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
-  return (
-    <div 
-      data-project-categories={project.categories.join(',')}
-      className={`glass-card rounded-xl overflow-hidden group animate-fade-in-up ${
-        project.featured ? 'md:col-span-2 xl:col-span-1' : ''
-      }`}
-    >
-      {/* Project Image */}
-      <ProjectImage project={project} />
+// Bento layout: index 0 → wide (col-span-2), index 1 → normal
+// index 5 → wide (col-span-2), others normal
+// This gives a nice alternating wide pattern
+const isWide = (index: number) => index === 0 || index === 5;
 
-      {/* Project Content */}
+const ProjectCard: React.FC<ProjectCardProps> = ({ project, index, cardNumber }) => {
+  const wide = isWide(index);
+
+  return (
+    <div
+      data-project-categories={project.categories.join(',')}
+      className={`group relative flex flex-col overflow-hidden rounded-2xl glass-card gradient-border h-full ${
+        wide ? 'md:col-span-2 lg:col-span-2' : ''
+      }`}
+      style={{ animationDelay: `${index * 0.08}s` }}
+    >
+      {/* Decorative card number */}
+      <span
+        className="card-number pointer-events-none absolute right-4 top-2 z-10 select-none leading-none opacity-60"
+        aria-hidden="true"
+      >
+        {String(cardNumber).padStart(2, '0')}
+      </span>
+
+      <ProjectImage project={project} wide={wide} />
       <ProjectContent project={project} />
     </div>
   );
