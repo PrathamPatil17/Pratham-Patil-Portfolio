@@ -25,3 +25,4 @@ dist-ssr
 .next/
 
 yarn.lock
+tsconfig.tsbuildinfo
